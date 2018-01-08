@@ -13,7 +13,11 @@
         <a class="version__link" href="#">Версия для слабовидящих</a>
       </div>
       <div class="container">
-        <div class="logo"></div>
+        <a class="version" href="#">Версия для слабовидящих</a>
+        <div class="logo">
+          <source media="(min-width: 1440px)" srcset=" 1x,  2x">
+          <img class="logo__img" src="" srcset=" 2x" alt="Университет ИТМО">
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a class="main-nav__link" href="#">О факультете</a></li>
@@ -23,31 +27,49 @@
           </ul>
           <button class="main-nav__toggle main-nav__toggle--nojs" type="button">Открыть меню</button>
         </nav>
+        <div class="presentation__date">26 Сентября 2017 идет НЕЧЕТНАЯ неделя</div>
       </div>
     </header>
     <main>
-      <section class="presentation">
-        <div class="container">
-          <div class="presentation__date">26 Сентября 2017 идет НЕЧЕТНАЯ неделя</div>
-          <h1 class="presentation__title">Факультет среднего профессионального образования</h1>
-        </div>
-      </section>
+      <div class="container">
+        <h1 class="presentation__title">Факультет среднего профессионального образования</h1>
+      </div>
       <section class="information">
+        <h2 class="information__title visually-hidden">Информация</h2>
         <div class="container">
-          <div class="information__slider">
-            <div class="information__slider-btn information__slider-btn--prev"></div>
-            <div class="information__slider-btn information__slider-btn--next"></div>
-          </div>
-          <div class="information__photo">
-            <h3 class="information__photo-title">День открытых дверей</h3>
-          </div>
-          <ul class="information-list">
-            <li class="information-list__item "><a class="information-list__link information-list__link--table" href="#">Электронное расписание</a></li>
-            <li class="information-list__item"><a class="information-list__link information-list__link--commission" href="#">Приемная комиссия</a></li>
-            <li class="information-list__item"><a class="information-list__link information-list__link--site" href="#">Портал университета</a></li>
-            <li class="information-list__item"><a class="information-list__link information-list__link--university" href="#">ИСУ НИУ ИТМО</a></li>
-          </ul>
-          <div class="news">
+          <section class="information-slider">
+            <input class="information-slider__btn information-slider__btn--1" type="radio" id="slider-btn-1" name="slider-btn" checked>
+            <input class="information-slider__btn information-slider__btn--2" type="radio" id="slider-btn-2" name="slider-btn">
+            <input class="information-slider__btn information-slider__btn--3" type="radio" id="slider-btn-3" name="slider-btn">
+            <div class="information-slider__slide information-slider__slide--1">
+              <p class="information-slider__slide-text">Статья о реализуемой факультетом программе непрерывного образования</p>
+            </div>
+            <div class="reviews__slide reviews__slide--2">
+              <p class="information-slider__slide-text"></p>
+            </div>
+            <div class="reviews__slide reviews__slide--3">
+              <p class="information-slider__slide-text"></p>
+            </div>
+            <div class="information-slider__controls">
+              <label class="information-slider__label information-slider__label--1" for="slider-btn-1"></label>
+              <label class="information-slider__label information-slider__label--2" for="slider-btn-2"></label>
+              <label class="information-slider__label information-slider__label--3" for="slider-btn-3"></label>
+            </div>
+            <button class="btn btn--slider btn--previous" type="button">Предыдущий</button>
+            <button class="btn btn--slider btn--next" type="button">Следующий</button>
+          </section>
+          <section class="advertisement">
+            <h3 class="advertisement__title">День открытых дверей</h3>
+          </section>
+          <section class="resources">
+            <ul class="resources-list">
+              <li class="resources-list__item "><a class="resources-list__link resources-list__link--table" href="#">Электронное расписание</a></li>
+              <li class="resources-list__item"><a class="resources-list__link resources-list__link--commission" href="#">Приемная комиссия</a></li>
+              <li class="resources-list__item"><a class="resources-list__link resources-list__link--site" href="#">Портал университета</a></li>
+              <li class="resources-list__item"><a class="resources-list__link resources-list__link--university" href="#">ИСУ НИУ ИТМО</a></li>
+            </ul>
+          </section>
+          <section class="news">
             <h2 class="news__title">Главные новости</h2>
             <article class="news__item">
               <div class="news__item-date">12.12.2017</div>
@@ -72,10 +94,11 @@
               <a class="news__item-detail" href="#">Подробнее</a>
             </article>
             <a class="news__all-news" href="#">Все новости</a>
-          </div>
+          </section>
         </div>
       </section>
       <section class="feedback">
+        <h2 class="feedback__title visually-hidden">Контакты</h2>
         <div class="container">
           <ul class="contacts">
             <li class="contacts__item feedback__item--adress"><a class="contacts__item-link" href="#">г.Санкт-Петербург, Песочная наб., д. 14</a></li>
@@ -85,6 +108,7 @@
           </ul>
         </div>
         <div class="map">
+          <h3 class="map__title visually-hidden">Карта</h3>
           <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CBapMTA7XA" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
