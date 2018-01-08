@@ -10,6 +10,7 @@
     <header class="page-header">
       <div class="container">
         <a class="version" href="#">Версия для слабовидящих</a>
+        <!-- Ну и логотип наверное будет туда вставляться картинкой? Не просто же пустой блоок. И учитывай что будет картинка и для ретины и для неритины -->
         <div class="logo"></div>
         <nav class="main-nav">
           <ul class="main-nav__items">
@@ -25,12 +26,15 @@
     <main>
       <section class="presentation">
         <div class="container">
+          <!-- Вот этот блок скорее шапке пренадлежит, чем блоку с перезентацией. В блоке с презентацией — это не секция, только заголовк и 4-5 картиок-->
           <div class="presentation__date">26 Сентября 2017 идет НЕЧЕТНАЯ неделя</div>
           <h1 class="presentation__title">Факультет среднего профессионального образования</h1>
         </div>
       </section>
       <section class="information">
+        <!-- Тут нужен скртыйц заголовк раздела, это же длля доступности -->
         <div class="container">
+          <!-- Как блок с днём откртых дверей связан со слайдром? У тебя две секции, первая это слайдер. Там внутри три слайда, для каждого картинка и текст. Плюс элеименты управления. Второй блок это день открытыхз дверей. Отедльно. -->
           <div class="information-photos">
             <div class="information-photos__slider">
               <div class="information-photos__btn information-photos__btn--prev"></div>
@@ -40,15 +44,18 @@
               <h3 class="information-photos__item-title">День открытых дверей</h3>
             </div>
           </div>
+          <!-- Это тоже отдельная секция. Там не хвататет иконок. или заготовок под них. -->
           <ul class="information-list">
             <li class="information-list__item"><a class="information-list__link" href="#">Электронное расписание</a></li>
             <li class="information-list__item"><a class="information-list__link" href="#">Приемная комиссия</a></li>
             <li class="information-list__item"><a class="information-list__link" href="#">Портал университета</a></li>
             <li class="information-list__item"><a class="information-list__link" href="#">ИСУ НИУ ИТМО</a></li>
           </ul>
+          <!-- Это секция -->
           <div class="news">
             <h2 class="news__title">Главные новости</h2>
             <article class="news__item">
+              <!-- date -->
               <div class="news__item-date">12.12.2017</div>
               <h3 class="news__item-title">Электронный журнал</h3>
               <p class="news__item-text">Электронный журнал факультета доступен по адресу:<a class="journal-link" href="#">ifpo.ifsmo.ru</a></p>
@@ -75,6 +82,7 @@
         </div>
       </section>
       <section class="feedback">
+        <!-- Тут нужен скртыйц заголовк раздела, это же длля доступности -->
         <div class="container">
           <ul class="contacts">
             <li class="contacts__item feedback__item--adress"><a class="contacts__item-link" href="#">г.Санкт-Петербург, Песочная наб., д. 14</a></li>
@@ -84,6 +92,7 @@
           </ul>
         </div>
         <div class="map">
+          <!-- Тут нужен скртыйц заголовк раздела, это же длля доступности -->
         </div>
       </section>
     </main>
