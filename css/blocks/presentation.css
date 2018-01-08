@@ -1,0 +1,35 @@
+.presentation {
+  min-height: 474px;
+  background-image: url("../img/banner-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.presentation .container {
+  min-height: 274px;
+  padding-top: 200px;
+  background-color: rgba(25, 70, 186, 0.5);
+}
+
+.presentation__date {
+  display: inline;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  padding: 8px 5px;
+  background-color: var(--redColor);
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--whiteColor);
+}
+
+.presentation__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 700;
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  text-align: center;
+}

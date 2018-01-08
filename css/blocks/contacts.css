@@ -1,0 +1,41 @@
+.contacts {
+  position: absolute;
+  margin: 0;
+  padding: 0 15px;
+  top: 50px;
+  left: 20px;
+  z-index: 1;
+  list-style: none;
+  background-color: var(--whiteColor);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contacts__item {
+  width: 245px;
+  padding: 20px 0;
+  padding-left: 90px;
+  border-bottom: 2px solid rgb(221, 221, 221);
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blackColor);
+}
+
+.contacts__item:last-child {
+  border: none;
+}
+
+.contacts__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 38px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-adress.svg");
+}
+
+.contacts__item-link {
+  color: var(--blackColor);
+  text-decoration: none;
+}

@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>Главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
+      <div class="version">
+        <a class="version__link" href="#">Версия для слабовидящих</a>
+      </div>
       <div class="container">
-        <a class="version" href="#">Версия для слабовидящих</a>
         <div class="logo"></div>
         <nav class="main-nav">
           <ul class="main-nav__items">
@@ -31,20 +34,18 @@
       </section>
       <section class="information">
         <div class="container">
-          <div class="information-photos">
-            <div class="information-photos__slider">
-              <div class="information-photos__btn information-photos__btn--prev"></div>
-              <div class="information-photos__btn information-photos__btn--next"></div>
-            </div>
-            <div class="information-photos__item">
-              <h3 class="information-photos__item-title">День открытых дверей</h3>
-            </div>
+          <div class="information__slider">
+            <div class="information__slider-btn information__slider-btn--prev"></div>
+            <div class="information__slider-btn information__slider-btn--next"></div>
+          </div>
+          <div class="information__photo">
+            <h3 class="information__photo-title">День открытых дверей</h3>
           </div>
           <ul class="information-list">
-            <li class="information-list__item"><a class="information-list__link" href="#">Электронное расписание</a></li>
-            <li class="information-list__item"><a class="information-list__link" href="#">Приемная комиссия</a></li>
-            <li class="information-list__item"><a class="information-list__link" href="#">Портал университета</a></li>
-            <li class="information-list__item"><a class="information-list__link" href="#">ИСУ НИУ ИТМО</a></li>
+            <li class="information-list__item "><a class="information-list__link information-list__link--table" href="#">Электронное расписание</a></li>
+            <li class="information-list__item"><a class="information-list__link information-list__link--commission" href="#">Приемная комиссия</a></li>
+            <li class="information-list__item"><a class="information-list__link information-list__link--site" href="#">Портал университета</a></li>
+            <li class="information-list__item"><a class="information-list__link information-list__link--university" href="#">ИСУ НИУ ИТМО</a></li>
           </ul>
           <div class="news">
             <h2 class="news__title">Главные новости</h2>
@@ -60,7 +61,7 @@
             </article>
             <article class="news__item">
               <div class="news__item-date">12.12.2017</div>
-              <h3 class="news__item-title">День открытых дверей для родителей и студентов</h3>
+              <h3 class="news__item-title">День открытых дверей для родителей студентов</h3>
               <p class="news__item-text">6 ноября на факультете СПО пройдет день открытых дверей для родителей и студентов.</p>
               <a class="news__item-detail" href="#">Подробнее</a>
             </article>
@@ -84,6 +85,7 @@
           </ul>
         </div>
         <div class="map">
+          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CBapMTA7XA" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>

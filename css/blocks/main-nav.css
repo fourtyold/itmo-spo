@@ -1,0 +1,23 @@
+.main-nav {
+  position: relative;
+  min-height: 85px;
+}
+
+.main-nav__items {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 30px;
+  height: 29px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  border: none;
+  background-image: url("../img/burger.svg");
+  background-color: transparent;
+  cursor: pointer;
+}
+
