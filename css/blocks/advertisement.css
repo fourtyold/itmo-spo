@@ -1,0 +1,63 @@
+.advertisement {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+}
+
+.advertisement__link {
+  text-decoration: none;
+}
+
+.advertisement__img {
+  width: 354px;
+}
+
+.advertisement__title {
+  position: relative;
+  width: 354px;
+  margin: 0;
+  margin-top: -65px;
+  padding: 5px 0;
+  background-color: var(--blueColor);
+  font-size: 25px;
+  line-height: 45px;
+  font-weight: 700;
+  color: var(--whiteColor);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advertisement__title::before {
+  content: "24 сентября";
+  display: inline;
+  position: absolute;
+  padding: 10px 15px;
+  top: -44px;
+  left: 0;
+  background-color: var(--redColor);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+@media (min-width: 1440px) {
+  .advertisement__img {
+    width: 346px;
+  }
+
+  .advertisement__title {
+    width: 346px;
+    margin-top: -5px;
+    padding: 11px 0;
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+  .advertisement__title::before {
+    top: -50px;
+    padding: 10px 18px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

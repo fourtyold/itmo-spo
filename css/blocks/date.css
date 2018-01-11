@@ -1,0 +1,23 @@
+.date {
+  display: inline;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  padding: 5px 8px;
+  background-color: var(--redColor);
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--whiteColor);
+}
+
+@media (min-width: 1440px) {
+
+  .date {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 9px 16px;
+    top: 118px;
+    right: 0;
+  }
+}
+

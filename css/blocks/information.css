@@ -1,8 +1,8 @@
 .information .container {
   display: grid;
   padding: 50px 20px;
-  grid-template: 415px 337px 593px/355px 355px;
-  grid-column-gap: 20px;
+  grid-template: 415px 337px 593px/48.7% 48.7%;
+  grid-column-gap: 2.6%;
   grid-row-gap: 50px;
   grid-template-areas:
     "slider slider"
@@ -10,41 +10,14 @@
     "news news";
 }
 
-.information__slider {
-  grid-area: slider;
-  background-image: url("../img/photo-slider-tablet.jpg");
-}
-
-.information__photo {
-  grid-area: photo;
-  padding-top: 236px;
-  background-image: url("../img/photo-news-tablet.jpg");
-  background-repeat: no-repeat;
-}
-
-.information__photo-title {
-  position: relative;
-  margin: 0;
-  padding: 15px 25px;
-  background-color: var(--blueColor);
-  font-size: 25px;
-  line-height: 45px;
-  font-weight: 700;
-  color: var(--whiteColor);
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.information__photo-title::before {
-  content: "24 сентября";
-  display: inline;
-  position: absolute;
-  padding: 10px 15px;
-  top: -44px;
-  left: 0;
-  background-color: var(--redColor);
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 400;
-  text-transform: none;
+@media (min-width: 1440px) {
+  .information .container {
+    padding: 90px 0;
+    grid-template: auto auto/ 709px 346px 345px;
+    grid-column-gap: 20px;
+    grid-row-gap: 86px;
+    grid-template-areas:
+    "slider photo list"
+    "news news news";
+  }
 }

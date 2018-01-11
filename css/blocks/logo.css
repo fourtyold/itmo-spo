@@ -1,13 +1,21 @@
 .logo {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 283px;
   height: 132px;
   top: 0;
   left: 20px;
   z-index: 1;
-  background-image: url("../img/logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: var(--whiteColor);
-  box-shadow: 0 5px 10px 3px rgba(218, 81, 50, 0.16);
+  box-shadow: 0 5px 10px 3px rgba(24, 62, 127, 0.16);
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 343px;
+    height: 159px;
+    left: 0;
+  }
 }

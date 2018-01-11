@@ -1,5 +1,5 @@
 .version {
-  padding: 12px 0;
+  padding: 11px 0;
   padding-right: 20px;
   background-color: rgb(231, 231, 231);
   text-align: right;
@@ -7,9 +7,9 @@
 
 .version__link {
   position: relative;
-  /*padding: 12px 0;*/
   font-size: 15px;
   line-height: 18px;
+  letter-spacing: 0.02em;
   color: rgb(109, 109, 109);
   text-decoration: none;
 }
@@ -21,6 +21,26 @@
   width: 24px;
   height: 14px;
   left: -36px;
-  background-image: url("../img/eye-icon.png");
+  background-image: url("../img/eye-icon.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+
+  .version {
+    padding: 19px 0;
+  }
+
+  .version__link {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: normal;
+  }
+
+  .version__link::before {
+    width: 30px;
+    height: 17px;
+    left: -41px;
+  }
+
 }
