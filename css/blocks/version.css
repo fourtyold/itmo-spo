@@ -12,6 +12,7 @@
   letter-spacing: 0.02em;
   color: rgb(109, 109, 109);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .version__link::before {
