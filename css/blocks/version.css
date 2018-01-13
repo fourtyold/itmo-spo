@@ -1,6 +1,5 @@
 .version {
   padding: 11px 0;
-  padding-right: 20px;
   background-color: rgb(231, 231, 231);
   text-align: right;
 }
@@ -9,7 +8,6 @@
   position: relative;
   font-size: 15px;
   line-height: 18px;
-  letter-spacing: 0.02em;
   color: rgb(109, 109, 109);
   text-decoration: none;
   cursor: pointer;
@@ -26,7 +24,23 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 1440px) {
+
+@media (min-width: 768px) {
+  .version {
+    padding-right: 20px;
+    background-color: rgb(231, 231, 231);
+    text-align: right;
+  }
+
+  .version__link {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+  }
+}
+
+
+@media (min-width: 1024px) {
 
   .version {
     padding: 19px 0;
@@ -43,5 +57,4 @@
     height: 17px;
     left: -41px;
   }
-
 }

@@ -3,19 +3,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 283px;
-  height: 132px;
-  top: 0;
-  left: 20px;
-  z-index: 1;
+  width: 118px;
+  height: 100%;
   background-color: var(--whiteColor);
-  box-shadow: 0 5px 10px 3px rgba(24, 62, 127, 0.16);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
+  .logo {
+    width: 283px;
+    height: 132px;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 10px 3px rgba(24, 62, 127, 0.16);
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 283px;
+    height: 132px;
+    left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
   .logo {
     width: 343px;
     height: 159px;
-    left: 0;
   }
 }

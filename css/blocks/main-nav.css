@@ -64,10 +64,11 @@
   border: none;
   background-image: url("../img/icon-cross.svg");
   background-color: transparent;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .main-nav {
     display: flex;
     min-height: 100px;
@@ -87,7 +88,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 27px;
+    padding: 0 2%;
     background-color: transparent;
     font-size: 20px;
     line-height: 24px;
@@ -104,5 +105,11 @@
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: 1330px) {
+  .main-nav__link {
+    padding: 0 27px;
   }
 }

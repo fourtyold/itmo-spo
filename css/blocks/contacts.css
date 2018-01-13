@@ -1,14 +1,9 @@
 .contacts {
-  position: absolute;
-  width: 354px;
+  width: 100%;
   margin: 0;
   padding: 0;
-  top: 37px;
-  left: 20px;
-  z-index: 1;
   list-style: none;
   background-color: var(--whiteColor);
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contacts__item {
@@ -31,8 +26,8 @@
   padding: 0 5px;
   padding-left: 29px;
   align-items: center;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   color: var(--blackColor);
   text-decoration: none;
 }
@@ -112,10 +107,26 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
+  .contacts {
+    position: absolute;
+    width: 354px;
+    top: 37px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .contacts__item-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
   .contacts {
     width: 465px;
-    left: 0;
+    left: 10px;
     top: 74px;
   }
 

@@ -17,7 +17,8 @@
       <div class="container">
         <picture class="logo">
           <source media="(min-width: 1440px)" srcset=" img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x">
-          <img class="logo__img" src="img/logo-tablet@1x.png" srcset="img/logo-tablet@2x.png 2x" alt="Университет ИТМО">
+          <source media="(min-width: 768px)" srcset=" img/logo-tablet@1x.png 1x, img/logo-tablet@2x.png 2x">
+          <img class="logo__img" src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" alt="Университет ИТМО">
         </picture>
         <nav class="main-nav">
           <ul class="main-nav__items">
@@ -49,7 +50,8 @@
               <a href="#">
                 <picture>
                   <source media="(min-width: 1440px)" srcset="img/photo-slider-desktop@1x.jpg 1x, img/photo-slider-desktop@2x.jpg 2x">
-                  <img class="information-slider__slide-photo" src="img/photo-slider-tablet@1x.jpg" srcset="img/photo-slider-tablet@2x.jpg 2x"alt="Статья о программе образования">
+                  <source media="(min-width: 768px)" srcset="img/photo-slider-tablet@1x.jpg 1x, img/photo-slider-tablet@2x.jpg 2x">
+                  <img class="information-slider__slide-photo" src="img/photo-slider-mobile@1x.jpg" srcset="img/photo-slider-mobile@2x.jpg 2x" alt="Статья о программе образования">
                 </picture>
               </a>
               <p class="information-slider__slide-text"><span class="information-slider__text-container">Статья о реализуемой факультетом</span><span class="information-slider__text-container">программе непрерывного образования</span></p>
@@ -57,8 +59,9 @@
             <div class="information-slider__slide information-slider__slide--2">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset=" 1x, 2x">
-                  <img class="information-slider__slide-photo" src="" srcset=" 2x" alt="">
+                  <source media="(min-width: 1440px)" srcset="img/slide2-desktop.png 1x, img/slide2-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slide2-tablet.png 1x, img/slide2-tablet.png 2x">
+                  <img class="information-slider__slide-photo" src="img/slide2-mobile.png" srcset="img/slide2-mobile.png 2x" alt="Слайд 2">
                 </picture>
               </a>
               <p class="information-slider__slide-text"></p>
@@ -66,8 +69,9 @@
             <div class="information-slider__slide information-slider__slide--3">
               <a href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset=" 1x, 2x">
-                  <img class="information-slider__slide-photo" src="" srcset=" 2x" alt="">
+                  <source media="(min-width: 1440px)" srcset="img/slide3-desktop.png 1x, img/slide3-desktop.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slide3-tablet.png 1x, img/slide3-tablet.png 2x">
+                  <img class="information-slider__slide-photo" src="img/slide3-mobile.png" srcset="img/slide3-mobile.png 2x" alt="Слайд 2">
                 </picture>
               </a>
               <p class="information-slider__slide-text"></p>
@@ -82,10 +86,13 @@
           </section>
           <section class="advertisement">
             <a class="advertisement__link" href="#">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/photo-open-doors-desktop@1x.jpg 1x, img/photo-open-doors-desktop@1x.jpg 2x">
-                <img class="advertisement__img" src="img/photo-open-doors-tablet@1x.jpg" srcset="img/photo-open-doors-tablet@2x.jpg 2x" alt="">
-              </picture>
+              <div class="advertisement__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/photo-open-doors-desktop@1x.jpg 1x, img/photo-open-doors-desktop@1x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-open-doors-tablet@1x.jpg 1x, img/photo-open-doors-tablet@2x.jpg 2x">
+                  <img class="advertisement__img" src="img/photo-open-doors-mobile@1x.jpg" srcset="img/photo-open-doors-mobile@2x.jpg 2x" alt="День открытых дверей">
+                </picture>
+              </div>
               <h3 class="advertisement__title">День открытых дверей</h3>
             </a>
           </section>

@@ -1,23 +1,40 @@
 .date {
   display: inline;
   position: absolute;
+  width: 260px;
   top: 100px;
   right: 20px;
-  padding: 5px 8px;
+  padding: 5px 10px;
   background-color: var(--redColor);
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 16px;
   color: var(--whiteColor);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 450px) {
+  .date {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .date {
+    top: 100px;
+    right: 20px;
+    padding: 5px 8px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
 
   .date {
     font-size: 20px;
     line-height: 24px;
     padding: 9px 16px;
     top: 118px;
-    right: 0;
+    right: 10px;
   }
 }
 
