@@ -1,24 +1,26 @@
 .date {
   display: inline;
   position: absolute;
-  width: 260px;
-  top: 100px;
+  width: 201px;
+  top: 140px;
   right: 20px;
   padding: 5px 10px;
   background-color: var(--redColor);
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   color: var(--whiteColor);
+  z-index: 1;
 }
 
 @media (min-width: 450px) {
   .date {
-    width: auto;
+    top: 100px;
   }
 }
 
 @media (min-width: 768px) {
   .date {
+    width: auto;
     top: 100px;
     right: 20px;
     padding: 5px 8px;

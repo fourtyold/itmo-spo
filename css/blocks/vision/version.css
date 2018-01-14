@@ -1,0 +1,30 @@
+.poor-vision .version {
+  background-color: transparent;
+}
+
+.poor-vision .version__link {
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--blackColor);
+  }
+
+.poor-vision .version__link::before {
+  width: 41px;
+  height: 23px;
+  left: -60px;
+  background-image: url("../img/icon-eye-vision@1x.png");
+}
+
+.poor-vision .version__link--normal {
+  display: none;
+}
+
+.poor-vision .version__link--vision {
+  display: inline;
+}
+
+@media (min-resolution: 2dppx) {
+  .poor-vision .version__link::before {
+    background-image: url("../img/icon-eye-vision@2x.png");
+  }
+}

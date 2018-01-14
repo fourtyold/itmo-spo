@@ -1,0 +1,130 @@
+.news {
+  grid-area: news;
+  display: flex;
+  margin-top: -3px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.news__title {
+  flex-basis: 100%;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--blueColor);
+}
+
+.news__item {
+  margin-bottom: 25px;
+}
+
+.news__item a {
+  font-size: 20px;
+  color: var(--redColor);
+}
+
+.news__item a:hover {
+  color: var(--blueColor);
+}
+
+.news__item-date {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  padding: 6px 7px;
+  background-color: var(--redColor);
+  font-size: 17px;
+  line-height: 20px;
+  color: var(--whiteColor);
+}
+
+.news__item-title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.news__item-text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.news__all-news {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: auto;
+  padding: 17px 28px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--blueColor);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--blueColor);
+  border-radius: 35px;
+}
+
+.news__all-news:hover {
+  color: var(--redColor);
+  border-color: var(--redColor);
+}
+
+@media (min-width: 768px) {
+  .news {
+    justify-content: space-between;
+  }
+
+  .news__item {
+    flex-basis: 48.6%;
+    margin-bottom: 25px;
+  }
+
+  .news__title {
+    text-align: left;
+  }
+
+  .news__item-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .news__title  {
+    margin-bottom: 42px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .news__item-date {
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .news__item-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .news__all-news {
+    margin-top: 41px;
+    padding: 16px 28px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .news__item {
+    flex-basis: 343px;
+  }
+}

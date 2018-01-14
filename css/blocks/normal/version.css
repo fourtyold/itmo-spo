@@ -22,8 +22,12 @@
   left: -36px;
   background-image: url("../img/eye-icon.svg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.version__link--vision {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .version {

@@ -11,15 +11,22 @@
     <header class="page-header">
       <div class="version">
         <div class="container">
-          <a class="version__link">Версия для слабовидящих</a>
+          <a class="version__link version__link--normal">Версия для слабовидящих</a>
+          <a class="version__link version__link--vision">Обычная версия сайта</a>
         </div>
       </div>
       <div class="container">
-        <picture class="logo">
-          <source media="(min-width: 1440px)" srcset=" img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x">
+        <picture class="logo logo--normal">
+          <source media="(min-width: 1024px)" srcset=" img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset=" img/logo-tablet@1x.png 1x, img/logo-tablet@2x.png 2x">
           <img class="logo__img" src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" alt="Университет ИТМО">
         </picture>
+        <picture class="logo logo--vision">
+          <source media="(min-width: 1024px)" srcset=" img/logo-desktop-vision@1x.png 1x, img/logo-desktop-vision@2x.png 2x">
+          <source media="(min-width: 768x)" srcset="">
+          <img class="logo__img" src="" srcset="" alt="Университет ИТМО">
+        </picture>
+        <div class="date">26 Сентября 2017 идет НЕЧЕТНАЯ неделя</div>
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a class="main-nav__link" href="#">О факультете</a></li>
@@ -30,26 +37,31 @@
           </ul>
           <button class="main-nav__toggle main-nav__toggle--nojs" type="button">Открыть меню</button>
         </nav>
-        <div class="date">26 Сентября 2017 идет НЕЧЕТНАЯ неделя</div>
       </div>
     </header>
     <main>
       <div class="presentation">
-        <div class="presentation__wrapper">
-          <h1 class="presentation__title">Факультет среднего профессионального образования</h1>
+        <h1 class="presentation__title">Факультет среднего профессионального образования</h1>
+        <div class="presentation__slider">
+          <div class="presentation__photo-wrapper presentation__photo-wrapper--1">
+            <div class="presentation__background-wrapper"></div>
+          </div>
+          <div class="presentation__photo-wrapper presentation__photo-wrapper--2">
+            <div class="presentation_background-wrapper"></div>
+          </div>
+          <div class="presentation__photo-wrapper presentation__photo-wrapper--3">
+            <div class="presentation__background-wrapper"></div>
+          </div>
         </div>
       </div>
       <section class="information">
         <h2 class="information__title visually-hidden">Информация</h2>
         <div class="container">
           <section class="information-slider">
-            <input class="information-slider__btn information-slider__btn--1" type="radio" id="slider-btn-1" name="slider-btn" checked>
-            <input class="information-slider__btn information-slider__btn--2" type="radio" id="slider-btn-2" name="slider-btn">
-            <input class="information-slider__btn information-slider__btn--3" type="radio" id="slider-btn-3" name="slider-btn">
             <div class="information-slider__slide information-slider__slide--1">
-              <a href="#">
+              <a class="information-slider__link" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/photo-slider-desktop@1x.jpg 1x, img/photo-slider-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1024px)" srcset="img/photo-slider-desktop@1x.jpg 1x, img/photo-slider-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-slider-tablet@1x.jpg 1x, img/photo-slider-tablet@2x.jpg 2x">
                   <img class="information-slider__slide-photo" src="img/photo-slider-mobile@1x.jpg" srcset="img/photo-slider-mobile@2x.jpg 2x" alt="Статья о программе образования">
                 </picture>
@@ -57,9 +69,9 @@
               <p class="information-slider__slide-text"><span class="information-slider__text-container">Статья о реализуемой факультетом</span><span class="information-slider__text-container">программе непрерывного образования</span></p>
             </div>
             <div class="information-slider__slide information-slider__slide--2">
-              <a href="#">
+              <a class="information-slider__link" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/slide2-desktop.png 1x, img/slide2-desktop.png 2x">
+                  <source media="(min-width: 1024px)" srcset="img/slide2-desktop.png 1x, img/slide2-desktop.png 2x">
                   <source media="(min-width: 768px)" srcset="img/slide2-tablet.png 1x, img/slide2-tablet.png 2x">
                   <img class="information-slider__slide-photo" src="img/slide2-mobile.png" srcset="img/slide2-mobile.png 2x" alt="Слайд 2">
                 </picture>
@@ -67,32 +79,23 @@
               <p class="information-slider__slide-text"></p>
             </div>
             <div class="information-slider__slide information-slider__slide--3">
-              <a href="#">
+              <a class="information-slider__link" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/slide3-desktop.png 1x, img/slide3-desktop.png 2x">
+                  <source media="(min-width: 1024px)" srcset="img/slide3-desktop.png 1x, img/slide3-desktop.png 2x">
                   <source media="(min-width: 768px)" srcset="img/slide3-tablet.png 1x, img/slide3-tablet.png 2x">
                   <img class="information-slider__slide-photo" src="img/slide3-mobile.png" srcset="img/slide3-mobile.png 2x" alt="Слайд 2">
                 </picture>
               </a>
               <p class="information-slider__slide-text"></p>
             </div>
-            <div class="information-slider__controls">
-              <label class="information-slider__label information-slider__label--1" for="slider-btn-1"></label>
-              <label class="information-slider__label information-slider__label--2" for="slider-btn-2"></label>
-              <label class="information-slider__label information-slider__label--3" for="slider-btn-3"></label>
-            </div>
-            <button class="information-slider__ctrl-btn information-slider__ctrl-btn--previous" type="button">Предыдущий</button>
-            <button class="information-slider__ctrl-btn information-slider__ctrl-btn--next" type="button">Следующий</button>
+            <!--<div class="information-slider__controls">-->
+              <!--<label class="information-slider__label information-slider__label&#45;&#45;1" for="slider-btn-1"></label>-->
+              <!--<label class="information-slider__label information-slider__label&#45;&#45;2" for="slider-btn-2"></label>-->
+              <!--<label class="information-slider__label information-slider__label&#45;&#45;3" for="slider-btn-3"></label>-->
+            <!--</div>-->
           </section>
           <section class="advertisement">
             <a class="advertisement__link" href="#">
-              <div class="advertisement__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="img/photo-open-doors-desktop@1x.jpg 1x, img/photo-open-doors-desktop@1x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-open-doors-tablet@1x.jpg 1x, img/photo-open-doors-tablet@2x.jpg 2x">
-                  <img class="advertisement__img" src="img/photo-open-doors-mobile@1x.jpg" srcset="img/photo-open-doors-mobile@2x.jpg 2x" alt="День открытых дверей">
-                </picture>
-              </div>
               <h3 class="advertisement__title">День открытых дверей</h3>
             </a>
           </section>
@@ -151,6 +154,9 @@
     <footer class="page-footer">
       <div class="copyrights">&copy; 2014-2017 ФСПО Университета ИТМО</div>
     </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

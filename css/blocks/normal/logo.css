@@ -3,9 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 118px;
-  height: 100%;
+  width: 175px;
+  height: 132px;
   background-color: var(--whiteColor);
+  z-index: 1;
+}
+
+.logo--vision {
+  display: none;
+}
+
+.logo__img {
+  width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -16,6 +25,10 @@
     left: 20px;
     z-index: 1;
     box-shadow: 0 5px 10px 3px rgba(24, 62, 127, 0.16);
+  }
+
+  .logo__img {
+    width: auto;
   }
 }
 

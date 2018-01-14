@@ -73,6 +73,7 @@ gulp.task("copy", function() {
       "fonts/**/*.ttf",
       "img/**",
       "js/**",
+      "slick/**",
       "*.html"
     ], {
       base: "."
