@@ -1,94 +1,45 @@
-.advertisement {
-  grid-area: photo;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  background-color: var(--grayColor);
-}
-
-.advertisement__link {
-  text-decoration: none;
-}
-
-.advertisement__img-wrapper {
-  width: 280px;
-}
-
-.advertisement__img {
-  width: 100%;
-  height: 100%;
-}
-
-.advertisement__title {
-  position: relative;
-  width: 280px;
-  margin: 0;
-  margin-top: -65px;
-  padding: 5px 0;
-  background-color: var(--blueColor);
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
+.poor-vision .advertisement__title {
+  background-color: var(--blackColor);
+  font-size: 22px;
   color: var(--whiteColor);
-  text-align: center;
-  text-transform: uppercase;
 }
 
-.advertisement__title::before {
-  content: "24 сентября";
-  display: inline;
-  position: absolute;
-  padding: 10px 15px;
-  top: -36px;
-  left: 0;
-  background-color: var(--redColor);
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: none;
+.poor-vision .advertisement__title::before {
+  top: -40px;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
-  .advertisement {
-    margin-bottom: 0;
+  .poor-vision .advertisement__title {
+    font-size: 27px;
   }
 
-  .advertisement__img-wrapper {
-    width: 354px;
-    height: 297px;
-  }
-
-  .advertisement__title {
-    width: 354px;
-    margin-top: -60px;
+  .poor-vision .advertisement__title::before {
+    top: -50px;
     font-size: 25px;
-    line-height: 45px;
-  }
-
-  .advertisement__title::before {
-    top: -44px;
-    font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  .advertisement__img-wrapper {
-    width: 346px;
+  .poor-vision .advertisement {
+    height: 400px;
   }
 
-  .advertisement__title {
-    width: 346px;
-    margin-top: -5px;
-    padding: 11px 0;
-    font-size: 28px;
-    line-height: 45px;
+  .poor-vision .advertisement__title {
+    padding: 8px 0;
+    font-size: 30px;
+    line-height: 47px;
   }
 
-  .advertisement__title::before {
-    top: -50px;
-    padding: 10px 18px;
-    font-size: 25px;
-    line-height: 30px;
+  .poor-vision .advertisement__title::before {
+    padding: 12px 19px;
+    top: -60px;
+    font-size: 30px;
+    line-height: 36px;
   }
 }

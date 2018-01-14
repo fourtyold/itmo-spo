@@ -3,15 +3,15 @@
 }
 
 .poor-vision .version__link {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
     color: var(--blackColor);
   }
 
 .poor-vision .version__link::before {
-  width: 41px;
-  height: 23px;
-  left: -60px;
+  width: 33px;
+  height: 18px;
+  left: -50px;
   background-image: url("../img/icon-eye-vision@1x.png");
 }
 
@@ -21,6 +21,38 @@
 
 .poor-vision .version__link--vision {
   display: inline;
+}
+
+@media (min-width: 768px) {
+  .poor-vision .version__link {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .poor-vision .version__link::before {
+    width: 35px;
+    height: 20px;
+    left: -55px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .version {
+    padding: 0;
+    padding-top: 40px;
+    margin-bottom: 97px;
+  }
+
+  .poor-vision .version__link {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .version__link::before {
+    width: 42px;
+    height: 24px;
+    left: -54px;
+  }
 }
 
 @media (min-resolution: 2dppx) {

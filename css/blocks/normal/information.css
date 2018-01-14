@@ -7,7 +7,7 @@
   .information .container {
     display: grid;
     padding: 50px 20px;
-    grid-template: 415px 337px 593px/48.7% 48.7%;
+    grid-template: auto auto auto/48.7% 48.7%;
     grid-column-gap: 2.6%;
     grid-row-gap: 50px;
     grid-template-areas:

@@ -9,6 +9,7 @@
   align-items: flex-end;
   text-decoration: none;
   min-height: 230px;
+  height: 100%;
   background-image: url("../img/photo-open-doors-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +19,7 @@
   position: relative;
   flex-basis: 100%;
   margin: 0;
-  padding: 5px 0;
+  padding: 5px 10px;
   background-color: var(--blueColor);
   font-size: 20px;
   line-height: 30px;

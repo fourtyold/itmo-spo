@@ -1,79 +1,39 @@
-.presentation {
-  min-height: 260px;
-  background-image: url("../img/banner-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: 140%;
+.poor-vision .presentation {
+  margin-bottom: 30px;
 }
 
-.presentation__wrapper {
-  display: flex;
-  min-height: 260px;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, rgba(34, 81, 163, 0.5), rgba(9, 42, 99, 0.5));
+.poor-vision .presentation__slider {
+  display: none;
 }
 
-.presentation__title {
-  margin: 0;
-  padding: 0;
-  font-size: 22px;
-  line-height: 30px;
-  font-weight: 700;
-  color: var(--whiteColor);
-  text-transform: uppercase;
-  text-align: center;
+.poor-vision .presentation__title {
+  position: static;
+  padding-top: 40px;
+  top: auto;
+  transform: none;
+  color: var(--blackColor);
 }
 
 @media (min-width: 768px) {
-  .presentation {
-    min-height: 473px;
-    background-image: url("../img/banner-tablet@1x.jpg");
-  }
-
-  .presentation__wrapper {
-    min-height: 473px;
-  }
-
-  .presentation__title {
-    font-size: 30px;
-    line-height: 50px;
+  .poor-vision .presentation__title {
+    padding-top: 60px;
+    font-size: 35px;
   }
 }
 
 @media (min-width: 1024px) {
-
-  .presentation {
-    min-height: 857px;
-    background-image: url("../img/banner-desktop@1x.jpg");
-    background-size: cover;
+  .poor-vision .presentation {
+    margin: 0;
   }
-
-  .presentation__wrapper {
-    min-height: 857px;
-  }
-
-  .presentation__title {
-    width: 1120px;
+  .poor-vision .presentation__title {
+    padding-top: 85px;
     font-size: 50px;
     line-height: 80px;
   }
 }
 
-@media (min-resolution: 2dppx) {
-  .presentation {
-    background-image: url("../img/banner-mobile@2x.jpg");
-  }
-
-  @media (min-width: 768px) {
-    .presentation {
-      background-image: url("../img/banner-tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: 1440px) {
-    .presentation {
-      background-image: url("../img/banner-desktop@2x.jpg");
-    }
+@media (min-width: 1460px) {
+  .poor-vision .presentation__title {
+    margin: 0 auto;
   }
 }
