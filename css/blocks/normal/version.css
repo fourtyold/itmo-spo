@@ -13,6 +13,11 @@
   cursor: pointer;
 }
 
+.version__link:hover {
+  text-decoration: underline;
+  color: var(--blueColor);
+}
+
 .version__link::before {
   content: "";
   position: absolute;

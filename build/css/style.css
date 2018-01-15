@@ -530,6 +530,11 @@ body {
   cursor: pointer;
 }
 
+.version__link:hover {
+  text-decoration: underline;
+  color: rgb(25, 70, 186);
+}
+
 .version__link::before {
   content: "";
   position: absolute;
