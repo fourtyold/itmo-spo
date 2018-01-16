@@ -109,14 +109,24 @@
   .resources__img-wrapper {
     min-width: 62px;
     height: 62px;
-    margin-right: 27px;
+    margin-right: 15px;
   }
 
   .resources__link {
     padding: 25px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .resources__img-wrapper {
+    margin-right: 27px;
+  }
+
+  .resources__link {
     padding-left: 27px;
     font-size: 25px;
-    line-height: 30px;
   }
 }
 

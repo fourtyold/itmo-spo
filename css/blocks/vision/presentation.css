@@ -2,16 +2,18 @@
   margin-bottom: 30px;
 }
 
-.poor-vision .presentation__slider {
-  display: none;
-}
-
 .poor-vision .presentation__title {
   position: static;
   padding-top: 40px;
   top: auto;
   transform: none;
   color: var(--blackColor);
+}
+
+.poor-vision .presentation__slider {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
 }
 
 @media (min-width: 768px) {

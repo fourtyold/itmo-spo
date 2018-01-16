@@ -44,3 +44,16 @@
     }
   }
 }
+
+
+/*FACULTY PAGE*/
+.sidebar .map {
+  background-image: url("../img/map-inner-tablet@1x.jpg");
+  height: 245px;
+}
+
+@media (min-resolution: 2dppx) {
+  .sidebar .map {
+    background-image: url("../img/map-inner-tablet@2x.jpg");
+  }
+}

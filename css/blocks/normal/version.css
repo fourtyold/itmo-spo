@@ -25,7 +25,7 @@
   width: 24px;
   height: 14px;
   left: -36px;
-  background-image: url("../img/eye-icon.svg");
+  background-image: url("../img/icon-eye-tablet@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,5 +65,18 @@
     width: 30px;
     height: 17px;
     left: -41px;
+    background-image: url("../img/icon-eye-desktop@1x.png");
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .version__link::before {
+    background-image: url("../img/icon-eye-tablet@2x.png");
+  }
+
+  @media (min-width: 1024px) {
+    .version__link::before {
+      background-image: url("../img/icon-eye-desktop@2x.png");
+    }
   }
 }

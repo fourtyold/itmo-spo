@@ -99,6 +99,10 @@
 }
 
 @media (min-width: 1024px) {
+  .news__item {
+    flex-basis: 23.8%;
+  }
+
   .news__title  {
     margin-bottom: 42px;
     font-size: 30px;
@@ -120,11 +124,5 @@
   .news__all-news {
     margin-top: 41px;
     padding: 16px 28px;
-  }
-}
-
-@media (min-width: 1460px) {
-  .news__item {
-    flex-basis: 343px;
   }
 }

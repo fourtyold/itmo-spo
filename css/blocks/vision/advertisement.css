@@ -39,7 +39,13 @@
   .poor-vision .advertisement__title::before {
     padding: 12px 19px;
     top: -60px;
-    font-size: 30px;
+    font-size: 29px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .poor-vision .advertisement__title::before {
+    font-size: 30px;
   }
 }

@@ -107,7 +107,7 @@
   }
 }
 
-@media (min-width: 1460px) {
+@media (min-width: 1024px) {
   .poor-vision .news__item {
     flex-basis: 49.2%;
   }

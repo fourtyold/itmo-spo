@@ -1,0 +1,10 @@
+.sidebar {
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    grid-area: aside;
+    padding: 0;
+  }
+}

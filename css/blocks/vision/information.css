@@ -1,7 +1,14 @@
+@media (min-width: 1024px) {
+  .poor-vision .information .container {
+    padding: 74px 10px;
+    padding-bottom: 100px;
+    grid-row-gap: 100px;
+  }
+}
+
 @media (min-width: 1460px) {
   .poor-vision .information .container {
     padding: 74px 0;
     padding-bottom: 100px;
-    grid-row-gap: 100px;
   }
 }

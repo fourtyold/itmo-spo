@@ -1,6 +1,5 @@
 .information-slider {
   position: relative;
-  min-height: 170px;
   margin-bottom: 30px;
 }
 
@@ -8,17 +7,26 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 53vw;
   justify-content: center;
-  background-color: var(--grayColor);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information-slider__slide--1 {
+  background-image: url("../img/photo-slider-mobile@1x.jpg");
+}
+
+.information-slider__slide--2 {
+  background-image: url("../img/photo-slider-mobile-2@1x.jpg");
+}
+
+.information-slider__slide--3 {
+  background-image: url("../img/photo-slider-mobile-3@1x.jpg");
 }
 
 .information-slider__link {
-  width: 100%;
-}
-
-.information-slider__slide-photo {
-  width: 100%;
+  display: block;
   height: 100%;
 }
 
@@ -42,16 +50,6 @@
   vertical-align: middle;
 }
 
-.information-slider__label {
-  display: block;
-  width: 15px;
-  height: 15px;
-  margin-right: 16px;
-  background-color: var(--whiteColor);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .information-slider {
     grid-area: slider;
@@ -60,6 +58,18 @@
 
   .information-slider__slide {
     height: 414px;
+  }
+
+  .information-slider__slide--1 {
+    background-image: url("../img/photo-slider-tablet@1x.jpg");
+  }
+
+  .information-slider__slide--2 {
+    background-image: url("../img/photo-slider-tablet-2@1x.jpg");
+  }
+
+  .information-slider__slide--3 {
+    background-image: url("../img/photo-slider-tablet-3@1x.jpg");
   }
 
   .information-slider__slide-text {
@@ -73,47 +83,67 @@
   .information-slider__text-container {
     padding: 5px 9px;
   }
-
-  .information-slider__label {
-    width: 15px;
-    height: 15px;
-    margin-right: 16px;
-  }
 }
 
 @media (min-width: 1024px) {
 
   .information-slider__slide {
-    height: 567px;
+    height: 400px;
   }
 
-  .information-slider__slide-photo{
-    vertical-align: top;
+  .information-slider__slide--1 {
+    background-image: url("../img/photo-slider-desktop@1x.jpg");
   }
 
   .information-slider__slide-text {
     width: 571px;
-    top: 360px;
-    font-size: 25px;
+    top: 260px;
+    left: 23px;
+    font-size: 20px;
     line-height: 30px;
   }
 
   .information-slider__text-container {
     padding: 5px 13px;
   }
-
-  .information-slider__label {
-    margin-right: 14px;
-  }
 }
 
 @media (min-width: 1460px) {
   .information-slider__slide-text {
-    top: 260px;
-    left: 23px;
+    font-size: 25px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .information-slider__slide--1 {
+    background-image: url("../img/photo-slider-mobile@2x.jpg");
   }
 
-  .information-slider__slide {
-    height: 400px;
+  .information-slider__slide--2 {
+    background-image: url("../img/photo-slider-mobile-2@2x.jpg");
+  }
+
+  .information-slider__slide--3 {
+    background-image: url("../img/photo-slider-mobile-3@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    .information-slider__slide--1 {
+      background-image: url("../img/photo-slider-tablet@2x.jpg");
+    }
+
+    .information-slider__slide--2 {
+      background-image: url("../img/photo-slider-tablet-2@2x.jpg");
+    }
+
+    .information-slider__slide--3 {
+      background-image: url("../img/photo-slider-tablet-3@2x.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .information-slider__slide--1 {
+      background-image: url("../img/photo-slider-desktop@2x.jpg");
+    }
   }
 }

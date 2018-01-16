@@ -3,6 +3,12 @@ $('.information-slider').slick({
 });
 
 $('.presentation__slider').slick({
+  autoplay: true,
+  accessibility: false,
   arrows: false,
-  autoplay: true
+  draggable: false,
+  fade: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  swipe: false
 });

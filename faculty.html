@@ -38,32 +38,7 @@
       </nav>
     </div>
   </header>
-  <main>
-    <section class="sidebar">
-      <section class="navigation-bar">
-        <ul class="navigation-bar__list">
-          <li class="navigation-bar__list-item navigation-bar__list-item--active"><a class="navigation-bar__link">Общая информация</a></li>
-          <li class="navigation-bar__list-item"><a class="navigation-bar__link">Администрация</a></li>
-          <li class="navigation-bar__list-item"><a class="navigation-bar__link">Образовательная программа</a></li>
-          <li class="navigation-bar__list-item"><a class="navigation-bar__link">Непрерывное образование</a></li>
-          <li class="navigation-bar__list-item"><a class="navigation-bar__link">Научная и внеучебная работа</a></li>
-          <li class="navigation-bar__list-item"><a class="navigation-bar__link">Задать вопрос</a></li>
-        </ul>
-      </section>
-      <section class="feedback">
-        <h2 class="feedback__title">Наши контакты</h2>
-         <div class="map">
-          <h3 class="map__title visually-hidden">Карта</h3>
-          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CBapMTA7XA" style="border:0" allowfullscreen></iframe>
-        </div>
-        <ul class="contacts">
-          <li class="contacts__item contacts__item--adress"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">Адрес: </span>г. Санкт-Петербург, Песочная наб., д. 14</a></li>
-          <li class="contacts__item contacts__item--mail"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">E-mail: </span>fspo@corp.ifmo.ru</a></li>
-          <li class="contacts__item contacts__item--phone"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">Тел.: </span>+7 (812) 234-33-55</a></li>
-          <li class="contacts__item contacts__item--fax"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">Факс: </span>+7 (812) 234-47-92</a></li>
-        </ul>
-      </section>
-    </section>
+  <main class="faculty-content">
     <section class="common-information">
       <h2 class="common-information__title">Общая информация</h2>
       <p class="common-information__text">Начать осваивать специальности в седьмом классе, поступить в университет
@@ -104,18 +79,18 @@
       <p class="commission__text">Прием заявлений и документов у абитуриентов проводится отборочной комиссией факультета СПО.
       <span class="commission__text-container">Расположение отборочной комиссии:</span> Песочная наб., д.14, 1-й этаж, каб. №111.</p>
       <div class="commission__telephones">
-        <h3 class="commission__telephones-title">Телефоны:</h3>
+        <h3 class="commission__block-title">Телефоны:</h3>
         <ul class="commission__tel-list">
           <li class="commission__list-item">+7 (812) 234-47-92 (приемная комиссия)</li>
           <li class="commission__list-item">+7 (812) 234-33-55 (общий номер телефона факультета)</li>
         </ul>
       </div>
       <div class="commission__mail">
-        <h3 class="commission__contacts-title">E-mail:</h3>
+        <h3 class="commission__block-title">E-mail:</h3>
         fspo@corp.ifmo.ru
       </div>
       <div class="commission__table">
-        <h3 class="commission__contacts-title">Сроки и часы работы:</h3>
+        <h3 class="commission__block-title">Сроки и часы работы:</h3>
         <ul class="commission__table-list">
           <li class="commission__list-item"><span class="commission__text-container">20 июня — 31 августа</span> (прием документов с 20 июня до 15 августа)</li>
           <li class="commission__list-item"><span class="commission__text-container">Пн — Пт:</span> 12:00 — 17:00</li>
@@ -123,7 +98,7 @@
         </ul>
       </div>
       <div class="commission__setup">
-        <h3 class="commission__setup-title">Состав отборочной комиссии ФСПО:</h3>
+        <h3 class="commission__block-title">Состав отборочной комиссии ФСПО:</h3>
         <ul class="commission__setup-list">
           <li class="commission__list-item"><span class="commission__text-container">Председатель:</span> Гриншпун Дмитрий Михайлович</li>
           <li class="commission__list-item"><span class="commission__text-container">Секретариат:</span>
@@ -205,6 +180,31 @@
           <td class="table__data">Текст</td>
         </tr>
       </table>
+    </section>
+    <section class="sidebar">
+      <section class="navigation-bar">
+        <ul class="navigation-bar__list">
+          <li class="navigation-bar__list-item navigation-bar__list-item--active"><a class="navigation-bar__link">Общая информация</a></li>
+          <li class="navigation-bar__list-item"><a class="navigation-bar__link" href="#">Администрация</a></li>
+          <li class="navigation-bar__list-item"><a class="navigation-bar__link" href="#">Образовательная программа</a></li>
+          <li class="navigation-bar__list-item"><a class="navigation-bar__link" href="#">Непрерывное образование</a></li>
+          <li class="navigation-bar__list-item"><a class="navigation-bar__link" href="#">Научная и внеучебная работа</a></li>
+          <li class="navigation-bar__list-item"><a class="navigation-bar__link" href="#">Задать вопрос</a></li>
+        </ul>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title">Наши контакты</h2>
+        <div class="map">
+          <h3 class="map__title visually-hidden">Карта</h3>
+          <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CBapMTA7XA" style="border:0" allowfullscreen></iframe>
+        </div>
+        <ul class="contacts">
+          <li class="contacts__item contacts__item--adress"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">Адрес: </span>Санкт-Петербург, Песочная наб., д. 14</a></li>
+          <li class="contacts__item contacts__item--mail"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">E-mail: </span>fspo@corp.ifmo.ru</a></li>
+          <li class="contacts__item contacts__item--phone"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">Тел.: </span>+7 (812) 234-33-55</a></li>
+          <li class="contacts__item contacts__item--fax"><a class="contacts__item-link" href="#"><span class="contacts__img-wrapper">Факс: </span>+7 (812) 234-47-92</a></li>
+        </ul>
+      </section>
     </section>
   </main>
   <footer class="page-footer">

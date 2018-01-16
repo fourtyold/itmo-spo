@@ -1,0 +1,9 @@
+.paginator {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .paginator {
+    display: flex;
+  }
+}
