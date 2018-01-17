@@ -50,3 +50,20 @@
     padding-top: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .navigation-bar__list {
+    padding-top: 4px;
+  }
+
+  .navigation-bar__link {
+    padding: 20px 0;
+    padding-left: 21px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .navigation-bar__link::before {
+    bottom: 0;
+  }
+}

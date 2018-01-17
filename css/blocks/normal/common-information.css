@@ -59,17 +59,26 @@
   }
 
   .common-information__title {
+    margin-bottom: 29px;
     font-size: 30px;
     line-height: 36px;
   }
 
   .common-information__text {
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 35px;
+  }
+
+  .common-information__question {
+    padding-top: 37px;
+    padding-bottom: 10px;
+    margin: 39px 0;
   }
 
   .common-information__question .common-information__text {
     font-size: 25px;
     line-height: 40px;
+    letter-spacing: 0.005em;
   }
 }

@@ -180,3 +180,26 @@
   }
 
 }
+
+@media (min-width: 1024px) {
+  .sidebar .contacts__item:first-child .contacts__item-link {
+    padding: 0;
+  }
+
+  .sidebar .contacts__item-link {
+    min-height: 103px;
+    font-size: 20px;
+  }
+
+  .sidebar .contacts__img-wrapper {
+    width: 43px;
+    height: 43px;
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sidebar .contacts__item-link {
+    font-size: 25px;
+  }
+}

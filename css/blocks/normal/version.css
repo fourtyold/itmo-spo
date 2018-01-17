@@ -30,6 +30,10 @@
   background-size: cover;
 }
 
+.version__link:hover::before {
+  background-image: url("../img/icon-eye-tablet-blue@1x.png");
+}
+
 .version__link--vision {
   display: none;
 }
@@ -67,6 +71,11 @@
     left: -41px;
     background-image: url("../img/icon-eye-desktop@1x.png");
   }
+
+  .version__link:hover::before {
+    background-image: url("../img/icon-eye-desktop-blue@1x.png");
+  }
+
 }
 
 @media (min-resolution: 2dppx) {
@@ -74,9 +83,18 @@
     background-image: url("../img/icon-eye-tablet@2x.png");
   }
 
+  .version__link:hover::before {
+    background-image: url("../img/icon-eye-tablet-blue@2x.png");
+  }
+
   @media (min-width: 1024px) {
     .version__link::before {
       background-image: url("../img/icon-eye-desktop@2x.png");
     }
+
+    .version__link:hover::before {
+      background-image: url("../img/icon-eye-desktop-blue@2x.png");
+    }
+
   }
 }

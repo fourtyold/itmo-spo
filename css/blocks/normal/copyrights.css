@@ -13,10 +13,14 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .copyrights {
     padding: 15px 0;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .copyrights--faculty {
+    padding: 17px 0;
   }
 }

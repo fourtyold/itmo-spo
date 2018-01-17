@@ -551,6 +551,10 @@ body {
   background-size: cover;
 }
 
+.version__link:hover::before {
+  background-image: url("../img/icon-eye-tablet-blue@1x.png");
+}
+
 .version__link--vision {
   display: none;
 }
@@ -1129,6 +1133,11 @@ body {
   background-image: url("../img/icon-eye-vision@1x.png");
 }
 
+.poor-vision .version__link:hover::before {
+  background-image: url("../img/icon-eye-vision@1x.png");
+
+}
+
 .poor-vision .version__link--normal {
   display: none;
 }
@@ -1324,6 +1333,8 @@ body {
 /*FACULTY NORMAL*/
 
 .faculty-content {
+  max-width: 1321px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 130px;
 }
@@ -1360,11 +1371,12 @@ body {
 
 .documents {
   display: none;
+  padding-top: 32px;
 }
 
 .documents__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 0;
   font-size: 30px;
   line-height: 36px;
@@ -1374,6 +1386,7 @@ body {
 
 .documents__text {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 20px;
   line-height: 35px;
@@ -1382,19 +1395,27 @@ body {
 .documents__list {
   margin: 0;
   padding: 0;
+  padding-left: 40px;
   list-style: none;
 }
 
 .documents__list-item {
+  position: relative;
+  margin-bottom: 20px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .documents__list-item::before {
-  content: "\25A0";
-  padding-right: 10px;
-  color: rgb(236, 11, 67);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: 7px;
+  left: -15px;
+  background-color: rgb(236, 11, 67);
 }
 
 .documents__text-container {
@@ -1403,19 +1424,21 @@ body {
 
 .commission {
   display: none;
+  padding-top: 41px;
 }
 
 .commission__title {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 20px;
   color: rgb(25, 70, 186);
 }
 
 .commission__text {
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
   font-size: 20px;
   line-height: 35px;
@@ -1427,7 +1450,7 @@ body {
 
 .commission__block-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   padding: 0;
   font-size: 25px;
   line-height: 35px;
@@ -1435,33 +1458,53 @@ body {
 }
 
 .commission li {
+  position: relative;
+  margin-bottom: 10px;
   font-size: 20px;
   line-height: 35px;
 }
 
 .commission ul {
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
   list-style: none;
+}
+
+.commission__mail {
+  margin-bottom: 34px;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 .commission__table-list .commission__list-item:first-child .commission__text-container, .commission__setup-list .commission__text-container {
   color: rgb(25, 70, 186);
 }
 
+.commission__secretariat-list .commission__list-item {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
 .commission__secretariat-list .commission__list-item::before {
-  content: "\25A0";
-  padding-right: 10px;
-  color: rgb(236, 11, 67);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: 15px;
+  left: -15px;
+  background-color: rgb(236, 11, 67);
 }
 
 .tidings {
   display: none;
+  padding-top: 24px;
 }
 
 .tidings__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
   padding: 0;
   font-size: 30px;
   line-height: 36px;
@@ -1469,13 +1512,24 @@ body {
 }
 
 .tidings__item {
-  border-bottom: 1px solid rgb(221, 221, 221);
+  position: relative;
+  margin-bottom: 83px;
+}
+
+.tidings__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: -35px;
+  background-color: rgb(221, 221, 221);
 }
 
 .tidings__item-date {
   display: inline-block;
-  margin-bottom: 10px;
-  padding: 5px 5px;
+  margin-bottom: 23px;
+  padding: 6px 6px;
   vertical-align: middle;
   background-color: rgb(236, 11, 67);
   font-size: 20px;
@@ -1485,7 +1539,7 @@ body {
 
 .tidings__item-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
   font-size: 25px;
   line-height: 35px;
@@ -1514,11 +1568,13 @@ body {
 
 .tidings__course-list {
   margin: 0;
+  margin-top: 50px;
   padding: 0;
   list-style: none;
 }
 
 .tidings__course-list-item {
+  margin-bottom: 17px;
   font-size: 25px;
   line-height: 35px;
   font-weight: 700;
@@ -1527,11 +1583,14 @@ body {
 
 .tidings__room-list {
   margin: 0;
+  margin-top: 8px;
   padding: 0;
+  padding-left: 40px;
   list-style: none;
 }
 
 .tidings__room-list-item {
+  position: relative;
   font-size: 20px;
   line-height: 35px;
   font-weight: 400;
@@ -1539,17 +1598,98 @@ body {
 }
 
 .tidings__room-list-item::before {
-  content: "\25A0";
-  padding-right: 10px;
-  color: rgb(236, 11, 67);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: 15px;
+  left: -15px;
+  background-color: rgb(236, 11, 67);
 }
 
 .paginator {
   display: none;
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
+  list-style: none;
+}
+
+.paginator__item {
+  margin-right: 29px;
+}
+
+.paginator__item--dots {
+  margin-left: -10px;
+  margin-right: 15px;
+}
+
+.paginator__link {
+  font-size: 20px;
+  line-height: 35px;
+  color: rgb(25, 70, 186);
+}
+
+.paginator__link:hover {
+  color: rgb(236, 11, 67);
+}
+
+.paginator__item--active .paginator__link, .paginator__item--active .paginator__link:hover {
+  opacity: 0.5;
+  color: rgb(25, 70, 186);
 }
 
 .table {
   display: none;
+  padding-top: 59px;
+}
+
+.table__title {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgb(25, 70, 186);
+}
+
+.table__item {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__item, .table__header, .table__data {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(221, 221, 221);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table__row:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.table__data {
+  padding: 11px 0;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.table__header {
+  width: 29.3%;
+  padding: 15px 0;
+  padding-left: 21px;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgb(25, 70, 186);
+  border-bottom: 2px solid rgb(25, 70, 186);
+}
+
+.table__header:last-child {
+  width: 41.4%;
 }
 
 .sidebar {
@@ -1975,6 +2115,10 @@ body {
     left: -41px;
     background-image: url("../img/icon-eye-desktop@1x.png");
   }
+
+  .version__link:hover::before {
+    background-image: url("../img/icon-eye-desktop-blue@1x.png");
+  }
   .logo {
     width: 283px;
     height: 132px;
@@ -1988,6 +2132,17 @@ body {
 
   .main-nav__item {
     height: 100%;
+    position: relative;
+  }
+
+  .main-nav__item--active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: rgb(236, 11, 67);
   }
 
   .main-nav--closed .main-nav__items {
@@ -2147,6 +2302,10 @@ body {
     height: 600px;
     background-image: url("../img/map-desktop@1x.jpg");
   }
+  .sidebar .map {
+    height: 300px;
+    background-image: url("../img/map-inner-desktop@1x.jpg");
+  }
   .contacts {
     width: 465px;
     left: 10px;
@@ -2172,6 +2331,29 @@ body {
 
   .contacts__item:first-child .contacts__item-link {
     padding-left: 50px;
+  }
+  .sidebar .contacts__item:first-child .contacts__item-link {
+    padding: 0;
+  }
+
+  .sidebar .contacts__item-link {
+    min-height: 103px;
+    font-size: 20px;
+  }
+
+  .sidebar .contacts__img-wrapper {
+    width: 43px;
+    height: 43px;
+    margin-right: 18px;
+  }
+  .copyrights {
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .copyrights--faculty {
+    padding: 17px 0;
   }
   .poor-vision .version {
     padding: 0;
@@ -2388,33 +2570,43 @@ body {
   }
   .faculty-content {
     grid-template-rows: repeat(5, auto);
-    grid-template-columns: 55.9% 38.6%;
-    grid-column-gap: 5.5%;
+    grid-template-columns: 63.1% 26.1%;
+    grid-column-gap: 10.7%;
     grid-template-areas:
       "info aside"
       "doc aside"
       "commission aside"
       "tidings aside"
       "table aside";
-    padding-top: 85px;
+    padding-top: 145px;
+    padding-bottom: 87px;
   }
   .common-information {
     grid-area: info;
   }
 
   .common-information__title {
+    margin-bottom: 29px;
     font-size: 30px;
     line-height: 36px;
   }
 
   .common-information__text {
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 35px;
+  }
+
+  .common-information__question {
+    padding-top: 37px;
+    padding-bottom: 10px;
+    margin: 39px 0;
   }
 
   .common-information__question .common-information__text {
     font-size: 25px;
     line-height: 40px;
+    letter-spacing: 0.005em;
   }
   .documents {
     display: block;
@@ -2435,6 +2627,29 @@ body {
     display: block;
     grid-area: table;
   }
+  .navigation-bar__list {
+    padding-top: 4px;
+  }
+
+  .navigation-bar__link {
+    padding: 20px 0;
+    padding-left: 21px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .navigation-bar__link::before {
+    bottom: 0;
+  }
+  .sidebar .feedback {
+    padding-top: 71px;
+  }
+
+  .feedback__title {
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2451,10 +2666,8 @@ body {
 }
 
 @media (min-width: 1440px) {
-  .copyrights {
-    padding: 15px 0;
-    font-size: 20px;
-    line-height: 24px;
+  .sidebar .contacts__item-link {
+    font-size: 25px;
   }
 }
 
@@ -2495,6 +2708,10 @@ body {
   .poor-vision .advertisement__title::before {
     font-size: 30px;
   }
+  .faculty-content {
+    padding-left: 119px;
+    padding-right: 0;
+  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -2502,10 +2719,19 @@ body {
     background-image: url("../img/icon-eye-tablet@2x.png");
   }
 
+  .version__link:hover::before {
+    background-image: url("../img/icon-eye-tablet-blue@2x.png");
+  }
+
   @media (min-width: 1024px) {
     .version__link::before {
       background-image: url("../img/icon-eye-desktop@2x.png");
     }
+
+    .version__link:hover::before {
+      background-image: url("../img/icon-eye-desktop-blue@2x.png");
+    }
+
   }
   .presentation__photo-wrapper--1 {
     background-image: url("../img/banner-mobile@2x.jpg");
@@ -2643,6 +2869,12 @@ body {
   .sidebar .map {
     background-image: url("../img/map-inner-tablet@2x.jpg");
   }
+
+  @media (min-width: 1024px) {
+    .sidebar .map {
+      background-image: url("../img/map-inner-desktop@2x.jpg");
+    }
+  }
   .contacts__item--adress .contacts__img-wrapper {
     background-image: url("../img/icon-adress@2x.png");
   }
@@ -2674,7 +2906,7 @@ body {
   .contacts__item--fax:hover .contacts__img-wrapper {
     background-image: url("../img/icon-fax-red@2x.png");
   }
-  .poor-vision .version__link::before {
+  .poor-vision .version__link::before, .poor-vision .version__link:hover::before {
     background-image: url("../img/icon-eye-vision@2x.png");
   }
   .poor-vision .map {

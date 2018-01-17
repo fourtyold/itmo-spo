@@ -15,6 +15,12 @@
   background-image: url("../img/icon-eye-vision@1x.png");
 }
 
+.poor-vision .version__link:hover::before {
+  background-image: url("../img/icon-eye-vision@1x.png");
+
+}
+
+
 .poor-vision .version__link--normal {
   display: none;
 }
@@ -56,7 +62,8 @@
 }
 
 @media (min-resolution: 2dppx) {
-  .poor-vision .version__link::before {
+  .poor-vision .version__link::before,
+  .poor-vision .version__link:hover::before {
     background-image: url("../img/icon-eye-vision@2x.png");
   }
 }
