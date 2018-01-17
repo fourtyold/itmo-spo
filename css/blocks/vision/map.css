@@ -31,3 +31,29 @@
     }
   }
 }
+
+
+/*FACULTY PAGE*/
+
+.poor-vision .sidebar .map {
+  background-image: url("../img/map-inner-tablet-vision@1x.jpg");
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .sidebar .map {
+    height: 404px;
+    background-image: url("../img/map-inner-desktop-vision@1x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .poor-vision .sidebar .map {
+    background-image: url("../img/map-inner-tablet-vision@2x.jpg");
+  }
+
+  @media (min-width: 1024px) {
+    .poor-vision .sidebar .map {
+      background-image: url("../img/map-inner-desktop-vision@2x.jpg");
+    }
+  }
+}

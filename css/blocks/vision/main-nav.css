@@ -11,11 +11,20 @@
   color: var(--blackColor);
 }
 
+.poor-vision .main-nav__link:hover {
+  background-color: transparent;
+}
+
 .poor-vision .main-nav__link::before {
   top: auto;
   bottom: 0;
   background-color: rgb(154, 154, 154);
 }
+
+.poor-vision .main-nav__item--active::before {
+  display: none;
+}
+
 
 @media (min-width: 768px) {
   .poor-vision .main-nav__link {

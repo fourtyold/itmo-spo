@@ -1,4 +1,5 @@
 var body = document.querySelector('body');
+var main =document.querySelector('main');
 var pageHeader = document.querySelector('.page-header');
 var menu = pageHeader.querySelector('.main-nav');
 var menuBtn = menu.querySelector('.main-nav__toggle');
@@ -13,8 +14,10 @@ function switchVersion(evt) {
 }
 
 function resetSlider() {
-  sliderBtns[0].style = '';
-  sliderBtns[1].style = '';
+  if (!main.classList.contains('faculty-content')) {
+    sliderBtns[0].style = '';
+    sliderBtns[1].style = '';
+  }
 }
 
 menu.classList.add('main-nav--closed');

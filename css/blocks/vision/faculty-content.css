@@ -1,0 +1,20 @@
+.poor-vision .faculty-content {
+  padding-top: 50px;
+  max-width: 1440px;
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .faculty-content {
+    padding-top: 94px;
+    padding-bottom: 45px;
+    grid-template-columns: 57.7% 32.4%;
+    grid-column-gap: 9.9%;
+  }
+}
+
+@media (min-width: 1460px) {
+  .poor-vision .faculty-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.poor-vision .navigation-bar__link {
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--blackColor);
+}
+
+.poor-vision .navigation-bar__link:hover::before {
+  background-color: var(--blackColor);
+}
+
+.poor-vision .navigation-bar__list-item--active .navigation-bar__link::before,
+.poor-vision .navigation-bar__list-item--active .navigation-bar__link:hover::before {
+  background-color: var(--blackColor);
+}
+
+@media (min-width: 1024px) {
+
+  .poor-vision .navigation-bar__link {
+    padding: 24px 0;
+    padding-left: 24px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .poor-vision .navigation-bar__link::before {
+    bottom: 5px;
+  }
+}

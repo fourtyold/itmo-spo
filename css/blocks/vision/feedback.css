@@ -1,4 +1,17 @@
-.feedback .container {
-  height: 10px;
-  background-color: black;
+.poor-vision .feedback__title {
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--blackColor);
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .sidebar .feedback {
+    padding-top: 91px;
+  }
+
+  .poor-vision .feedback__title {
+    margin-bottom: 50px;
+    font-size: 35px;
+    line-height: 42px;
+  }
 }

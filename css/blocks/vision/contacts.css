@@ -75,3 +75,32 @@
     background-image: none;
   }
 }
+
+
+/*FACULTY PAGE*/
+.poor-vision .sidebar .contacts__img-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .sidebar .contacts__item {
+    text-align: left;
+  }
+
+  .poor-vision .sidebar .contacts__item-link {
+    width: auto;
+    height: 120px;
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .sidebar .contacts__item:first-child .contacts__item-link {
+    padding-left: 20px;
+  }
+
+  .poor-vision .sidebar .contacts__img-wrapper {
+    margin-right: 0;
+  }
+
+}
