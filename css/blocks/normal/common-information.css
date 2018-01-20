@@ -8,13 +8,31 @@
   color: var(--blueColor);
 }
 
+.common-information__title:not(:first-child) {
+  margin-top: 57px;
+}
+
+.common-information__block-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--blueColor);
+}
+
 .common-information__text {
   margin: 20px 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: var(--blackColor);
+}
+
+.common-information__text-container {
+  font-weight: 700;
 }
 
 .common-information__question {
@@ -23,14 +41,64 @@
 }
 
 .common-information__question .common-information__text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   color: var(--blueColor);
 }
 
+.common-information__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  list-style: none;
+}
+
+.common-information__list-item {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.common-information__list-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  top: 7px;
+  left: -15px;
+  background-color: var(--redColor);
+}
+
+.common-information__list--telephones,
+.common-information__list--table,
+.common-information__list--setup {
+  padding-left: 0;
+}
+
+.common-information__list--telephones .common-information__list-item::before,
+.common-information__list--table .common-information__list-item::before,
+.common-information__list--setup .common-information__list-item::before {
+  display: none;
+}
+
+.common-information__list--table .common-information__list-item:first-child span,
+.common-information__list--setup span{
+  color: var(--blueColor);
+}
+
+.common-information__list--secretariat {
+  margin-top: 15px;
+}
+
+.common-information__list--secretariat .common-information__list-item::before {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .common-information {
-    grid-area: main;
     padding: 0;
   }
 
@@ -54,10 +122,6 @@
 }
 
 @media (min-width: 1024px) {
-  .common-information {
-    grid-area: info;
-  }
-
   .common-information__title {
     margin-bottom: 29px;
     font-size: 30px;
@@ -80,5 +144,38 @@
     font-size: 25px;
     line-height: 40px;
     letter-spacing: 0.005em;
+  }
+
+  .common-information__list {
+    margin-top: -7px;
+  }
+
+  .common-information__list-item {
+    font-size: 20px;
+  }
+
+  .common-information__block-title {
+    margin-top: 36px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .common-information__list--telephones {
+    margin-top: 14px;
+  }
+
+  .common-information__list--table {
+    margin-top: 11px;
+    margin-bottom: 40px;
+  }
+
+  .common-information__list--setup {
+    margin-top: 13px;
+    margin-bottom: 40px;
+  }
+
+  .common-information__list--secretariat {
+    margin-top: 20px;
   }
 }

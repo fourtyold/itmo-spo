@@ -10,23 +10,14 @@
     display: grid;
     grid-template-columns: 55.9% 38.6%;
     grid-column-gap: 5.5%;
-    grid-template-areas:
-      "main aside";
     padding-top: 85px;
   }
 }
 
 @media (min-width: 1024px) {
   .faculty-content {
-    grid-template-rows: repeat(5, auto);
     grid-template-columns: 63.1% 26.1%;
     grid-column-gap: 10.7%;
-    grid-template-areas:
-      "info aside"
-      "doc aside"
-      "commission aside"
-      "tidings aside"
-      "table aside";
     padding-top: 145px;
     padding-bottom: 87px;
   }

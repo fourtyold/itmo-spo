@@ -1366,13 +1366,31 @@ body {
   color: rgb(25, 70, 186);
 }
 
+.common-information__title:not(:first-child) {
+  margin-top: 57px;
+}
+
+.common-information__block-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgb(25, 70, 186);
+}
+
 .common-information__text {
   margin: 20px 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: rgb(0, 0, 0);
+}
+
+.common-information__text-container {
+  font-weight: 700;
 }
 
 .common-information__question {
@@ -1381,50 +1399,27 @@ body {
 }
 
 .common-information__question .common-information__text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   color: rgb(25, 70, 186);
 }
 
-.documents {
-  display: none;
-  padding-top: 32px;
-}
-
-.documents__title {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: rgb(25, 70, 186);
-}
-
-.documents__text {
-  margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.documents__list {
+.common-information__list {
   margin: 0;
   padding: 0;
   padding-left: 40px;
   list-style: none;
 }
 
-.documents__list-item {
+.common-information__list-item {
   position: relative;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
 }
 
-.documents__list-item::before {
+.common-information__list-item::before {
   content: "";
   position: absolute;
   display: block;
@@ -1435,83 +1430,24 @@ body {
   background-color: rgb(236, 11, 67);
 }
 
-.documents__text-container {
-  font-weight: 700;
+.common-information__list--telephones, .common-information__list--table, .common-information__list--setup {
+  padding-left: 0;
 }
 
-.commission {
+.common-information__list--telephones .common-information__list-item::before, .common-information__list--table .common-information__list-item::before, .common-information__list--setup .common-information__list-item::before {
   display: none;
-  padding-top: 41px;
 }
 
-.commission__title {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  font-size: 30px;
-  line-height: 36px;
+.common-information__list--table .common-information__list-item:first-child span, .common-information__list--setup span{
   color: rgb(25, 70, 186);
 }
 
-.commission__text {
-  margin: 0;
-  margin-bottom: 33px;
-  padding: 0;
-  font-size: 20px;
-  line-height: 35px;
+.common-information__list--secretariat {
+  margin-top: 15px;
 }
 
-.commission__text-container {
-  font-weight: 700;
-}
-
-.commission__block-title {
-  margin: 0;
-  margin-bottom: 7px;
-  padding: 0;
-  font-size: 25px;
-  line-height: 35px;
-  color: rgb(25, 70, 186);
-}
-
-.commission li {
-  position: relative;
-  margin-bottom: 10px;
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.commission ul {
-  margin: 0;
-  margin-bottom: 32px;
-  padding: 0;
-  list-style: none;
-}
-
-.commission__mail {
-  margin-bottom: 34px;
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.commission__table-list .commission__list-item:first-child .commission__text-container, .commission__setup-list .commission__text-container {
-  color: rgb(25, 70, 186);
-}
-
-.commission__secretariat-list .commission__list-item {
-  margin-left: 40px;
-  margin-top: 10px;
-}
-
-.commission__secretariat-list .commission__list-item::before {
-  content: "";
-  position: absolute;
+.common-information__list--secretariat .common-information__list-item::before {
   display: block;
-  width: 6px;
-  height: 6px;
-  top: 15px;
-  left: -15px;
-  background-color: rgb(236, 11, 67);
 }
 
 .tidings {
@@ -1658,8 +1594,8 @@ body {
 }
 
 .table {
-  display: none;
-  padding-top: 59px;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .table__title {
@@ -1669,11 +1605,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: rgb(25, 70, 186);
-}
-
-.table__item {
-  width: 100%;
-  border-collapse: collapse;
 }
 
 .table__item, .table__header, .table__data {
@@ -1690,17 +1621,17 @@ body {
 
 .table__data {
   padding: 11px 0;
-  padding-left: 20px;
-  font-size: 20px;
-  line-height: 35px;
+  padding-left: 5px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .table__header {
   width: 29.3%;
   padding: 15px 0;
-  padding-left: 21px;
-  font-size: 25px;
-  line-height: 30px;
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 24px;
   color: rgb(25, 70, 186);
   border-bottom: 2px solid rgb(25, 70, 186);
 }
@@ -1814,14 +1745,6 @@ body {
   font-size: 28px;
   line-height: 34px;
   color: rgb(0, 0, 0);
-}
-
-.poor-vision .documents {
-  display: none;
-}
-
-.poor-vision .commission {
-  display: none;
 }
 
 .poor-vision .tidings {
@@ -2139,12 +2062,9 @@ body {
     display: grid;
     grid-template-columns: 55.9% 38.6%;
     grid-column-gap: 5.5%;
-    grid-template-areas:
-      "main aside";
     padding-top: 85px;
   }
   .common-information {
-    grid-area: main;
     padding: 0;
   }
 
@@ -2165,8 +2085,10 @@ body {
     font-size: 20px;
     line-height: 35px;
   }
+  .table {
+    margin-bottom: 30px;
+  }
   .sidebar {
-    grid-area: aside;
     padding: 0;
   }
   .navigation-bar__link {
@@ -2708,22 +2630,11 @@ body {
     line-height: 30px;
   }
   .faculty-content {
-    grid-template-rows: repeat(5, auto);
     grid-template-columns: 63.1% 26.1%;
     grid-column-gap: 10.7%;
-    grid-template-areas:
-      "info aside"
-      "doc aside"
-      "commission aside"
-      "tidings aside"
-      "table aside";
     padding-top: 145px;
     padding-bottom: 87px;
   }
-  .common-information {
-    grid-area: info;
-  }
-
   .common-information__title {
     margin-bottom: 29px;
     font-size: 30px;
@@ -2747,13 +2658,38 @@ body {
     line-height: 40px;
     letter-spacing: 0.005em;
   }
-  .documents {
-    display: block;
-    grid-area: doc;
+
+  .common-information__list {
+    margin-top: -7px;
   }
-  .commission {
-    display: block;
-    grid-area: commission;
+
+  .common-information__list-item {
+    font-size: 20px;
+  }
+
+  .common-information__block-title {
+    margin-top: 36px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .common-information__list--telephones {
+    margin-top: 14px;
+  }
+
+  .common-information__list--table {
+    margin-top: 11px;
+    margin-bottom: 40px;
+  }
+
+  .common-information__list--setup {
+    margin-top: 13px;
+    margin-bottom: 40px;
+  }
+
+  .common-information__list--secretariat {
+    margin-top: 20px;
   }
   .tidings {
     display: block;
@@ -2763,8 +2699,20 @@ body {
     display: flex;
   }
   .table {
-    display: block;
-    grid-area: table;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .table__data {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .table__header {
+    padding-left: 21px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .navigation-bar__list {
     padding-top: 4px;
