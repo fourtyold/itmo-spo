@@ -58,6 +58,7 @@
   .advertisement__title {
     font-size: 25px;
     line-height: 45px;
+    text-align: left;
   }
 
   .advertisement__title::before {
@@ -81,6 +82,7 @@
     padding: 11px 0;
     font-size: 28px;
     line-height: 45px;
+    text-align: center;
   }
 
   .advertisement__title::before {

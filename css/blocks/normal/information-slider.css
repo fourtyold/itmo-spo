@@ -34,9 +34,8 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 40%;
-  left: 10px;
-  font-size: 3vw;
+  top: 50%;
+  font-size: 3.5vw;
   line-height: 12px;
   color:var(--blackColor);
   font-weight: 400;

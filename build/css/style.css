@@ -385,7 +385,7 @@ body {
 .slick-dots
 {
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
 
     /*display: block;*/
 
@@ -409,9 +409,9 @@ body {
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    /*width: 20px;*/
+    /*height: 20px;*/
+    margin: 0 8px;
     padding: 0;
 
     cursor: pointer;
@@ -424,8 +424,8 @@ body {
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 8px;
+    height: 8px;
     padding: 5px;
 
     cursor: pointer;
@@ -495,8 +495,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 50%;
@@ -693,12 +693,11 @@ body {
 
 .presentation__title {
   position: absolute;
-  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   top: 60%;
   transform: translateY(-50%);
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -748,9 +747,8 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 40%;
-  left: 10px;
-  font-size: 3vw;
+  top: 50%;
+  font-size: 3.5vw;
   line-height: 12px;
   color:rgb(0, 0, 0);
   font-weight: 400;
@@ -1019,8 +1017,8 @@ body {
   position: absolute;
   height: 2px;
   bottom: 0;
-  left: 17px;
-  right: 17px;
+  left: 0;
+  right: 0;
   background-color: rgb(221, 221, 221);
 }
 
@@ -1028,7 +1026,6 @@ body {
   display: flex;
   min-height: 87px;
   padding: 0 5px;
-  padding-left: 29px;
   align-items: center;
   font-size: 16px;
   line-height: 18px;
@@ -1259,7 +1256,7 @@ body {
 
 .poor-vision .resources__link {
   padding: 23px 0;
-  justify-content: center;
+  text-align: left;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -1845,6 +1842,17 @@ body {
 }
 
 @media (min-width: 768px) {
+  .slick-prev, .slick-next {
+    display: block;
+  }
+  .slick-dots {
+    bottom: 27px;
+  }
+
+  .slick-dots li button, .slick-dots li button::before {
+    width: 15px;
+    height: 15px;
+  }
   .container {
     padding: 0;
   }
@@ -1960,6 +1968,7 @@ body {
   .advertisement__title {
     font-size: 25px;
     line-height: 45px;
+    text-align: left;
   }
 
   .advertisement__title::before {
@@ -2005,8 +2014,14 @@ body {
   }
 
   .contacts__item-link {
+    padding-left: 29px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .contacts__item:not(:last-child)::before {
+    left: 17px;
+    right: 17px;
   }
   .sidebar .contacts {
     position: static;
@@ -2186,11 +2201,12 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .slick-prev, .slick-next {
-    display: block;
-  }
   .slick-dots {
     bottom: 22px;
+  }
+
+  .slick-dots li {
+    margin: 0 7px;
   }
   .container {
     max-width: 1440px;
@@ -2253,9 +2269,9 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 2%;
+    padding: 0 7%;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: rgb(255, 255, 255);
   }
@@ -2348,6 +2364,7 @@ body {
     padding: 11px 0;
     font-size: 28px;
     line-height: 45px;
+    text-align: center;
   }
 
   .advertisement__title::before {
@@ -2833,6 +2850,7 @@ body {
 @media (min-width: 1330px) {
   .main-nav__link {
     padding: 0 27px;
+    font-size: 20px;
   }
 }
 
