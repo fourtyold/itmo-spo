@@ -1,14 +1,10 @@
-.tidings {
-  display: none;
-  padding-top: 24px;
-}
-
 .tidings__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-top: 30px;
+  margin-bottom: 23px;
   padding: 0;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 25px;
+  line-height: 30px;
   color: var(--blueColor);
 }
 
@@ -33,25 +29,25 @@
   padding: 6px 6px;
   vertical-align: middle;
   background-color: var(--redColor);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: var(--whiteColor);
 }
 
 .tidings__item-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   padding: 0;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 24px;
   color: var(--blueColor);
 }
 
 .tidings__item-text {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .tidings__item a {
@@ -69,22 +65,22 @@
 
 .tidings__course-list {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 0;
   list-style: none;
 }
 
 .tidings__course-list-item {
   margin-bottom: 17px;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
   color: var(--blueColor);
 }
 
 .tidings__room-list {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 15px;
   padding: 0;
   padding-left: 40px;
   list-style: none;
@@ -92,8 +88,9 @@
 
 .tidings__room-list-item {
   position: relative;
-  font-size: 20px;
-  line-height: 35px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: var(--blackColor);
 }
@@ -104,14 +101,99 @@
   display: block;
   width: 6px;
   height: 6px;
-  top: 15px;
+  top: 7px;
   left: -15px;
   background-color: var(--redColor);
 }
 
+@media (min-width: 768px) {
+  .tidings__title {
+    margin-top: 57px;
+    margin-bottom: 23px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .tidings__item-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tidings__item-text {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .tidings__item-date {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .tidings__course-list-item {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tidings__room-list-item {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .tidings__room-list-item::before {
+    top: 11px;
+  }
+}
+
 @media (min-width: 1024px) {
-  .tidings {
-    display: block;
-    grid-area: tidings;
+  .tidings__title {
+    margin-top: 24px;
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .tidings__item-title {
+    margin-bottom: 8px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .tidings__item-text {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .tidings__item-date {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tidings__course-list {
+    margin-top: 50px;
+  }
+
+  .tidings__course-list-item {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .tidings__room-list {
+    margin-top: 8px;
+  }
+
+  .tidings__room-list-item {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .tidings__room-list-item::before {
+    top: 15px;
   }
 }

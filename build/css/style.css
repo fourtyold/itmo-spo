@@ -1367,7 +1367,7 @@ body {
 }
 
 .common-information__title:not(:first-child) {
-  margin-top: 57px;
+  margin-top: 30px;
 }
 
 .common-information__block-title {
@@ -1450,17 +1450,13 @@ body {
   display: block;
 }
 
-.tidings {
-  display: none;
-  padding-top: 24px;
-}
-
 .tidings__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-top: 30px;
+  margin-bottom: 23px;
   padding: 0;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 25px;
+  line-height: 30px;
   color: rgb(25, 70, 186);
 }
 
@@ -1485,25 +1481,25 @@ body {
   padding: 6px 6px;
   vertical-align: middle;
   background-color: rgb(236, 11, 67);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: rgb(255, 255, 255);
 }
 
 .tidings__item-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   padding: 0;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 24px;
   color: rgb(25, 70, 186);
 }
 
 .tidings__item-text {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .tidings__item a {
@@ -1521,22 +1517,22 @@ body {
 
 .tidings__course-list {
   margin: 0;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 0;
   list-style: none;
 }
 
 .tidings__course-list-item {
   margin-bottom: 17px;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
   color: rgb(25, 70, 186);
 }
 
 .tidings__room-list {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 15px;
   padding: 0;
   padding-left: 40px;
   list-style: none;
@@ -1544,8 +1540,9 @@ body {
 
 .tidings__room-list-item {
   position: relative;
-  font-size: 20px;
-  line-height: 35px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: rgb(0, 0, 0);
 }
@@ -1556,13 +1553,13 @@ body {
   display: block;
   width: 6px;
   height: 6px;
-  top: 15px;
+  top: 7px;
   left: -15px;
   background-color: rgb(236, 11, 67);
 }
 
 .paginator {
-  display: none;
+  display: flex;
   margin: 0;
   margin-top: -10px;
   padding: 0;
@@ -1582,6 +1579,7 @@ body {
   font-size: 20px;
   line-height: 35px;
   color: rgb(25, 70, 186);
+  text-decoration: none;
 }
 
 .paginator__link:hover {
@@ -1595,6 +1593,7 @@ body {
 
 .table {
   width: 100%;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
@@ -1727,6 +1726,25 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.poor-vision .common-information__list-item {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.poor-vision .common-information__list-item::before {
+  background-color: rgb(0, 0, 0);
+}
+
+.poor-vision .common-information__text-container, .poor-vision .common-information__list--table .common-information__list-item:first-child span {
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .common-information__block-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
 .poor-vision .navigation-bar__link {
   font-size: 25px;
   line-height: 30px;
@@ -1747,12 +1765,68 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.poor-vision .tidings {
-  display: none;
+.poor-vision .tidings__title {
+  font-size: 28px;
+  line-height: 34px;
+  color: rgb(0, 0, 0);
 }
 
-.poor-vision .table {
-  display: none;
+.poor-vision .tidings__item-date {
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .tidings__item-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .tidings__item-text {
+  font-size: 20px;
+}
+
+.poor-vision .tidings__item a {
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .tidings__course-list-item {
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .tidings__room-list-item {
+  font-size: 20px;
+}
+
+.poor-vision .tidings__room-list-item::before {
+  background-color: rgb(0, 0, 0);
+}
+
+.poor-vision .paginator__link {
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .paginator__item--active .paginator__link, .poor-vision .paginator__item--active .paginator__link:hover {
+  opacity: 1;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .table__data {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.poor-vision .table__header {
+  font-size: 22px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 @media (min-width: 450px) {
@@ -2085,8 +2159,57 @@ body {
     font-size: 20px;
     line-height: 35px;
   }
-  .table {
-    margin-bottom: 30px;
+
+  .common-information__title:not(:first-child) {
+    margin-top: 57px;
+  }
+
+  .common-information__list-item {
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .common-information__list-item::before {
+    top: 11px;
+  }
+  .tidings__title {
+    margin-top: 57px;
+    margin-bottom: 23px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .tidings__item-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tidings__item-text {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .tidings__item-date {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .tidings__course-list-item {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tidings__room-list-item {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .tidings__room-list-item::before {
+    top: 11px;
   }
   .sidebar {
     padding: 0;
@@ -2119,6 +2242,63 @@ body {
   .poor-vision .common-information__question .common-information__text {
     font-size: 28px;
     line-height: 40px;
+  }
+
+  .poor-vision .common-information__list-item {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .common-information__block-title {
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(0, 0, 0);
+  }
+
+  .poor-vision .common-information__list-item::before {
+    top: 10px;
+  }
+  .poor-vision .tidings__title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .poor-vision .tidings__item-date {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .tidings__item-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .tidings__item-text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .tidings__course-list-item {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .tidings__room-list-item {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .poor-vision .paginator__link {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .poor-vision .table__data {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .table__header {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
@@ -2635,6 +2815,10 @@ body {
     padding-top: 145px;
     padding-bottom: 87px;
   }
+  .common-information__title:not(:first-child) {
+    margin-top: 59px;
+  }
+
   .common-information__title {
     margin-bottom: 29px;
     font-size: 30px;
@@ -2660,46 +2844,94 @@ body {
   }
 
   .common-information__list {
-    margin-top: -7px;
+    margin-top: -10px;
   }
 
   .common-information__list-item {
     font-size: 20px;
+    line-height: 27px;
   }
 
   .common-information__block-title {
-    margin-top: 36px;
+    margin-top: 35px;
+    margin-bottom: 7px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .common-information__list--documents .common-information__list-item {
+    line-height: 24px;
+  }
+
+  .common-information__list--telephones {
+    margin-top: 10px;
+  }
+
+  .common-information__list--table {
+    margin-top: 10px;
+  }
+
+  .common-information__list--setup {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .common-information__list--secretariat {
+    margin-top: 12px;
+    margin-bottom: 58px;
+  }
+  .tidings__title {
+    margin-top: 24px;
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .tidings__item-title {
     margin-bottom: 8px;
     font-size: 25px;
     line-height: 35px;
   }
 
-  .common-information__list--telephones {
-    margin-top: 14px;
+  .tidings__item-text {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 35px;
   }
 
-  .common-information__list--table {
-    margin-top: 11px;
-    margin-bottom: 40px;
+  .tidings__item-date {
+    font-size: 20px;
+    line-height: 24px;
   }
 
-  .common-information__list--setup {
-    margin-top: 13px;
-    margin-bottom: 40px;
+  .tidings__course-list {
+    margin-top: 50px;
   }
 
-  .common-information__list--secretariat {
-    margin-top: 20px;
+  .tidings__course-list-item {
+    font-size: 25px;
+    line-height: 35px;
   }
-  .tidings {
-    display: block;
-    grid-area: tidings;
+
+  .tidings__room-list {
+    margin-top: 8px;
+  }
+
+  .tidings__room-list-item {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .tidings__room-list-item::before {
+    top: 15px;
   }
   .paginator {
     display: flex;
   }
   .table {
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 0;
   }
 
@@ -2768,6 +3000,21 @@ body {
     letter-spacing: 0.005em;
   }
 
+  .poor-vision .common-information__list-item {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .common-information__block-title {
+    font-size: 38px;
+    line-height: 45px;
+    color: rgb(0, 0, 0);
+  }
+
+  .poor-vision .common-information__list-item::before {
+    top: 23px;
+  }
+
   .poor-vision .navigation-bar__link {
     padding: 24px 0;
     padding-left: 24px;
@@ -2785,6 +3032,52 @@ body {
     margin-bottom: 50px;
     font-size: 35px;
     line-height: 42px;
+  }
+  .poor-vision .tidings__title {
+    font-size: 45px;
+    line-height: 54px;
+  }
+
+  .poor-vision .tidings__item-date {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .tidings__item-title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .poor-vision .tidings__item-text {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .tidings__course-list-item {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .poor-vision .tidings__room-list-item {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .tidings__room-list-item::before {
+    top: 23px;
+  }
+  .poor-vision .paginator__link {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .poor-vision .table__data {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .table__header {
+    font-size: 38px;
+    line-height: 45px;
   }
 }
 

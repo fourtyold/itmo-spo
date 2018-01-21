@@ -20,6 +20,26 @@
   color: var(--blackColor);
 }
 
+.poor-vision .common-information__list-item {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.poor-vision .common-information__list-item::before {
+  background-color: var(--blackColor);
+}
+
+.poor-vision .common-information__text-container,
+.poor-vision .common-information__list--table .common-information__list-item:first-child span {
+  color: var(--blackColor);
+}
+
+.poor-vision .common-information__block-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--blackColor);
+}
+
 @media (min-width: 768px) {
   .poor-vision .common-information__title {
     font-size: 35px;
@@ -34,6 +54,21 @@
   .poor-vision .common-information__question .common-information__text {
     font-size: 28px;
     line-height: 40px;
+  }
+
+  .poor-vision .common-information__list-item {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .common-information__block-title {
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--blackColor);
+  }
+
+  .poor-vision .common-information__list-item::before {
+    top: 10px;
   }
 }
 
@@ -61,5 +96,20 @@
     font-size: 35px;
     line-height: 60px;
     letter-spacing: 0.005em;
+  }
+
+  .poor-vision .common-information__list-item {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .common-information__block-title {
+    font-size: 38px;
+    line-height: 45px;
+    color: var(--blackColor);
+  }
+
+  .poor-vision .common-information__list-item::before {
+    top: 23px;
   }
 }

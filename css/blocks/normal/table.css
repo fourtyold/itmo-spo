@@ -1,5 +1,6 @@
 .table {
   width: 100%;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
@@ -45,15 +46,9 @@
   width: 41.4%;
 }
 
-@media (min-width: 768px) {
-  .table {
-    margin-bottom: 30px;
-  }
-}
-
 @media (min-width: 1024px) {
   .table {
-    margin-top: 40px;
+    margin-top: 37px;
     margin-bottom: 0;
   }
 

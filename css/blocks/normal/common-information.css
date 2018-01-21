@@ -9,7 +9,7 @@
 }
 
 .common-information__title:not(:first-child) {
-  margin-top: 57px;
+  margin-top: 30px;
 }
 
 .common-information__block-title {
@@ -119,9 +119,26 @@
     font-size: 20px;
     line-height: 35px;
   }
+
+  .common-information__title:not(:first-child) {
+    margin-top: 57px;
+  }
+
+  .common-information__list-item {
+    font-size: 17px;
+    line-height: 32px;
+  }
+
+  .common-information__list-item::before {
+    top: 11px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .common-information__title:not(:first-child) {
+    margin-top: 59px;
+  }
+
   .common-information__title {
     margin-bottom: 29px;
     font-size: 30px;
@@ -147,35 +164,40 @@
   }
 
   .common-information__list {
-    margin-top: -7px;
+    margin-top: -10px;
   }
 
   .common-information__list-item {
     font-size: 20px;
+    line-height: 27px;
   }
 
   .common-information__block-title {
-    margin-top: 36px;
-    margin-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 7px;
     font-size: 25px;
     line-height: 35px;
   }
 
+  .common-information__list--documents .common-information__list-item {
+    line-height: 24px;
+  }
+
   .common-information__list--telephones {
-    margin-top: 14px;
+    margin-top: 10px;
   }
 
   .common-information__list--table {
-    margin-top: 11px;
-    margin-bottom: 40px;
+    margin-top: 10px;
   }
 
   .common-information__list--setup {
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 40px;
   }
 
   .common-information__list--secretariat {
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-bottom: 58px;
   }
 }

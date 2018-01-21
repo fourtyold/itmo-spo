@@ -1,3 +1,108 @@
-.poor-vision .tidings {
-  display: none;
+.poor-vision .tidings__title {
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--blackColor);
+}
+
+.poor-vision .tidings__item-date {
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--blackColor);
+}
+
+.poor-vision .tidings__item-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--blackColor);
+}
+
+.poor-vision .tidings__item-text {
+  font-size: 20px;
+}
+
+.poor-vision .tidings__item a {
+  color: var(--blackColor);
+}
+
+.poor-vision .tidings__course-list-item {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--blackColor);
+}
+
+.poor-vision .tidings__room-list-item {
+  font-size: 20px;
+}
+
+.poor-vision .tidings__room-list-item::before {
+  background-color: var(--blackColor);
+}
+
+@media (min-width: 768px) {
+  .poor-vision .tidings__title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .poor-vision .tidings__item-date {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .tidings__item-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .tidings__item-text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .poor-vision .tidings__course-list-item {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .tidings__room-list-item {
+    font-size: 25px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .tidings__title {
+    font-size: 45px;
+    line-height: 54px;
+  }
+
+  .poor-vision .tidings__item-date {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .poor-vision .tidings__item-title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .poor-vision .tidings__item-text {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .tidings__course-list-item {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .poor-vision .tidings__room-list-item {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .poor-vision .tidings__room-list-item::before {
+    top: 23px;
+  }
 }

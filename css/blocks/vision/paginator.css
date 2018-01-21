@@ -1,0 +1,24 @@
+.poor-vision .paginator__link {
+  color: var(--blackColor);
+}
+
+.poor-vision .paginator__item--active .paginator__link,
+.poor-vision .paginator__item--active .paginator__link:hover {
+  opacity: 1;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+
+@media (min-width: 768px) {
+  .poor-vision .paginator__link {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poor-vision .paginator__link {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
