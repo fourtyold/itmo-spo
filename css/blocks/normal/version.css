@@ -25,13 +25,13 @@
   width: 24px;
   height: 14px;
   left: -36px;
-  background-image: url("../img/icon-eye-tablet@1x.png");
+  background-image: url("../img/sprites@1x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 0 0;
 }
 
 .version__link:hover::before {
-  background-image: url("../img/icon-eye-tablet-blue@1x.png");
+  background-position: 0 -36px;
 }
 
 .version__link--vision {
@@ -69,32 +69,33 @@
     width: 30px;
     height: 17px;
     left: -41px;
-    background-image: url("../img/icon-eye-desktop@1x.png");
+    background-position: 0 -70px ;
   }
 
   .version__link:hover::before {
-    background-image: url("../img/icon-eye-desktop-blue@1x.png");
+    background-position: 0 -108px ;
   }
 
 }
 
 @media (min-resolution: 2dppx) {
   .version__link::before {
-    background-image: url("../img/icon-eye-tablet@2x.png");
+    background-image: url("../img/sprites@2x.png");
+    background-size: 350px;
   }
 
   .version__link:hover::before {
-    background-image: url("../img/icon-eye-tablet-blue@2x.png");
+    background-position: 0 -21px;
   }
 
   @media (min-width: 1024px) {
     .version__link::before {
-      background-image: url("../img/icon-eye-desktop@2x.png");
+      background-size: 330px;
+      background-position: 0 -40px;
     }
 
     .version__link:hover::before {
-      background-image: url("../img/icon-eye-desktop-blue@2x.png");
+      background-position: 0 -63px;
     }
-
   }
 }

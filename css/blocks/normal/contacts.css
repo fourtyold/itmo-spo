@@ -35,76 +35,42 @@
   min-width: 38px;
   height: 38px;
   margin-right: 23px;
-  background-size: contain;
+  background-image: url("../img/sprites@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 285%;
   font-size: 0;
 }
 
 .contacts__item--adress .contacts__img-wrapper {
-  background-image: url("../img/icon-adress@1x.png");
-}
-
-.contacts__item--mail .contacts__img-wrapper {
-  background-image: url("../img/icon-mail@1x.png");
-}
-
-.contacts__item--phone .contacts__img-wrapper {
-  background-image: url("../img/icon-phone@1x.png");
-}
-
-.contacts__item--fax .contacts__img-wrapper {
-  background-image: url("../img/icon-fax@1x.png");
+  background-position: -66px 0;
 }
 
 .contacts__item--adress:hover .contacts__img-wrapper {
-  background-image: url("../img/icon-adress-red@1x.png");
+  background-position: -67px -47px;
+}
+
+.contacts__item--mail .contacts__img-wrapper {
+  background-position: -70px -91px;
 }
 
 .contacts__item--mail:hover .contacts__img-wrapper {
-  background-image: url("../img/icon-mail-red@1x.png");
+  background-position: -70px -130px;
+}
+
+.contacts__item--phone .contacts__img-wrapper {
+  background-position: -70px -177px;
 }
 
 .contacts__item--phone:hover .contacts__img-wrapper {
-  background-image: url("../img/icon-phone-red@1x.png");
+  background-position: -70px -220px;
+}
+
+.contacts__item--fax .contacts__img-wrapper {
+  background-position: -71px -271px;
 }
 
 .contacts__item--fax:hover .contacts__img-wrapper {
-  background-image: url("../img/icon-fax-red@1x.png");
-}
-
-@media (min-resolution: 2dppx) {
-  .contacts__item--adress .contacts__img-wrapper {
-    background-image: url("../img/icon-adress@2x.png");
-  }
-
-  .contacts__item--mail .contacts__img-wrapper {
-    background-image: url("../img/icon-mail@2x.png");
-  }
-
-  .contacts__item--phone .contacts__img-wrapper {
-    background-image: url("../img/icon-phone@2x.png");
-  }
-
-  .contacts__item--fax .contacts__img-wrapper {
-    background-image: url("../img/icon-fax@2x.png");
-  }
-
-  .contacts__item--adress:hover .contacts__img-wrapper {
-    background-image: url("../img/icon-adress-red@2x.png");
-  }
-
-  .contacts__item--mail:hover .contacts__img-wrapper {
-    background-image: url("../img/icon-mail-red@2x.png");
-  }
-
-  .contacts__item--phone:hover .contacts__img-wrapper {
-    background-image: url("../img/icon-phone-red@2x.png");
-  }
-
-  .contacts__item--fax:hover .contacts__img-wrapper {
-    background-image: url("../img/icon-fax-red@2x.png");
-  }
+  background-position: -71px -327px;
 }
 
 @media (min-width: 768px) {
@@ -144,6 +110,7 @@
     width: 50px;
     height: 50px;
     margin-right: 30px;
+    background-size: auto;
   }
 
   .contacts__item-link {
@@ -155,6 +122,116 @@
 
   .contacts__item:first-child .contacts__item-link {
     padding-left: 50px;
+  }
+
+  .contacts__item--adress .contacts__img-wrapper {
+    background-position: -100px 0;
+  }
+
+  .contacts__item--adress:hover .contacts__img-wrapper {
+    background-position: -101px -65px;
+  }
+
+  .contacts__item--mail .contacts__img-wrapper {
+    background-position: -100px -126px;
+  }
+
+  .contacts__item--mail:hover .contacts__img-wrapper {
+    background-position: -100px -180px;
+  }
+
+  .contacts__item--phone .contacts__img-wrapper {
+    background-position: -99px -243px;
+  }
+
+  .contacts__item--phone:hover .contacts__img-wrapper {
+    background-position: -99px -303px;
+  }
+
+  .contacts__item--fax .contacts__img-wrapper {
+    background-position: -100px -376px;
+  }
+
+  .contacts__item--fax:hover .contacts__img-wrapper {
+    background-position: -100px -453px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .contacts__img-wrapper {
+    background-image: url("../img/sprites@2x.png");
+    background-size: 260px;
+  }
+
+  .contacts__item--adress .contacts__img-wrapper {
+    background-position: -104px -106px;
+  }
+
+  .contacts__item--adress:hover .contacts__img-wrapper {
+    background-position: -104px -151px;
+  }
+
+  .contacts__item--mail .contacts__img-wrapper {
+    background-position: -167px 6px;
+  }
+
+  .contacts__item--mail:hover .contacts__img-wrapper {
+    background-position: -167px -26px;
+  }
+
+  .contacts__item--phone .contacts__img-wrapper {
+    background-position: -167px -66px;
+  }
+
+  .contacts__item--phone:hover .contacts__img-wrapper {
+    background-position: -167px -103px;
+  }
+
+  .contacts__item--fax .contacts__img-wrapper {
+    background-position: -223px 0;
+  }
+
+  .contacts__item--fax:hover .contacts__img-wrapper {
+    background-position: -223px -46px;
+  }
+
+  @media (min-width: 1024px) {
+    .contacts__img-wrapper {
+      background-image: url("../img/sprites@2x.png");
+      background-size: 345px;
+    }
+
+    .contacts__item--adress .contacts__img-wrapper {
+      background-position: -149px -140px;
+    }
+
+    .contacts__item--adress:hover .contacts__img-wrapper {
+      background-position: -149px -199px;
+    }
+
+    .contacts__item--mail .contacts__img-wrapper {
+      background-position: -222px 9px;
+    }
+
+    .contacts__item--mail:hover .contacts__img-wrapper {
+      background-position: -222px -34px;
+    }
+
+    .contacts__item--phone .contacts__img-wrapper {
+      background-position: -222px -85px;
+    }
+
+    .contacts__item--phone:hover .contacts__img-wrapper {
+      background-position: -222px -134px;
+    }
+
+    .contacts__item--fax .contacts__img-wrapper {
+      background-position: -296px 0;
+    }
+
+    .contacts__item--fax:hover .contacts__img-wrapper {
+      background-position: -296px -61px;
+    }
   }
 }
 
@@ -201,11 +278,84 @@
     width: 43px;
     height: 43px;
     margin-right: 18px;
+    background-size: 125px;
+  }
+
+  .sidebar .contacts__item--adress .contacts__img-wrapper {
+    background-position: -78px 0;
+  }
+
+  .sidebar .contacts__item--adress:hover .contacts__img-wrapper {
+    background-position: -79px -54px;
+  }
+
+  .sidebar .contacts__item--mail .contacts__img-wrapper {
+    background-position: -82px -104px;
+  }
+
+  .sidebar .contacts__item--mail:hover .contacts__img-wrapper {
+    background-position: -82px -149px;
+  }
+
+  .sidebar .contacts__item--phone .contacts__img-wrapper {
+    background-position: -82px -205px;
+  }
+
+  .sidebar .contacts__item--phone:hover .contacts__img-wrapper {
+    background-position: -82px -255px;
+  }
+
+  .sidebar .contacts__item--fax .contacts__img-wrapper {
+    background-position: -82px -312px;
+  }
+
+  .sidebar .contacts__item--fax:hover .contacts__img-wrapper {
+    background-position: -82px -376px;
   }
 }
 
 @media (min-width: 1440px) {
   .sidebar .contacts__item-link {
     font-size: 25px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  @media (min-width: 1024px) {
+    .sidebar .contacts__img-wrapper {
+      background-size: 295px;
+    }
+
+    .sidebar .contacts__item--adress .contacts__img-wrapper {
+      background-position: -122px -120px;
+    }
+
+    .sidebar .contacts__item--adress:hover .contacts__img-wrapper {
+      background-position: -122px -171px;
+    }
+
+    .sidebar .contacts__item--mail .contacts__img-wrapper {
+      background-position: -190px 7px;
+    }
+
+    .sidebar .contacts__item--mail:hover .contacts__img-wrapper {
+      background-position: -190px -30px;
+    }
+
+    .sidebar .contacts__item--phone .contacts__img-wrapper {
+      background-position: -190px -70px;
+    }
+
+    .sidebar .contacts__item--phone:hover .contacts__img-wrapper {
+      background-position: -190px -112px;
+    }
+
+    .sidebar .contacts__item--fax .contacts__img-wrapper {
+      background-position: -253px 0;
+    }
+
+    .sidebar .contacts__item--fax:hover .contacts__img-wrapper {
+      background-position: -253px -52px;
+    }
   }
 }

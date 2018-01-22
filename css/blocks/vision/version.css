@@ -12,12 +12,12 @@
   width: 33px;
   height: 18px;
   left: -50px;
-  background-image: url("../img/icon-eye-vision@1x.png");
+  background-position: 0 -103px ;
+  background-size: 330%;
 }
 
 .poor-vision .version__link:hover::before {
-  background-image: url("../img/icon-eye-vision@1x.png");
-
+  background-position: 0 -103px ;
 }
 
 
@@ -39,6 +39,8 @@
     width: 35px;
     height: 20px;
     left: -55px;
+    background-position: 0 -112px ;
+    background-size: 340%;
   }
 }
 
@@ -58,12 +60,35 @@
     width: 42px;
     height: 24px;
     left: -54px;
+    background-size: auto;
+    background-position: 0 -143px ;
+  }
+
+  .poor-vision .version__link:hover::before {
+    background-position: 0 -143px ;
   }
 }
 
 @media (min-resolution: 2dppx) {
   .poor-vision .version__link::before,
   .poor-vision .version__link:hover::before {
-    background-image: url("../img/icon-eye-vision@2x.png");
+    background-size: 270px;
+    background-position: 0 -72px;
+  }
+
+  @media (min-width: 768px) {
+    .poor-vision .version__link::before,
+    .poor-vision .version__link:hover::before {
+      background-size: 280px;
+      background-position: 0 -74px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .poor-vision .version__link::before,
+    .poor-vision .version__link:hover::before {
+      background-size: 350px;
+      background-position: 0 -93px;
+    }
   }
 }
