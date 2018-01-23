@@ -128,19 +128,19 @@
   }
 
   .resources__link--commission .resources__img-wrapper {
-    background-position: 2px -369px;
+    background-position: 0 -369px;
   }
 
   .resources__link--commission:hover .resources__img-wrapper {
-    background-position: 2px -454px;
+    background-position: 0 -454px;
   }
 
   .resources__link--site .resources__img-wrapper {
-    background-position: 3px -545px;
+    background-position: 0 -545px;
   }
 
   .resources__link--site:hover .resources__img-wrapper {
-    background-position: 3px -630px;
+    background-position: 0 -630px;
   }
 
   .resources__link--university .resources__img-wrapper {

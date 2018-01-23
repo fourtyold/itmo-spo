@@ -1,24 +1,3 @@
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/Comfortaa-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/Comfortaa-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Comfortaa";
-  src: url("../fonts/Comfortaa-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
 body {
   min-width: 320px;
   margin: 0 auto;
@@ -2503,19 +2482,19 @@ body {
   }
 
   .resources__link--commission .resources__img-wrapper {
-    background-position: 2px -369px;
+    background-position: 0 -369px;
   }
 
   .resources__link--commission:hover .resources__img-wrapper {
-    background-position: 2px -454px;
+    background-position: 0 -454px;
   }
 
   .resources__link--site .resources__img-wrapper {
-    background-position: 3px -545px;
+    background-position: 0 -545px;
   }
 
   .resources__link--site:hover .resources__img-wrapper {
-    background-position: 3px -630px;
+    background-position: 0 -630px;
   }
 
   .resources__link--university .resources__img-wrapper {
